@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#3a6844", "secondary-fixed-dim": "#61de8a", "secondary-fixed": "#7efba4", "on-secondary-fixed-variant": "#005228", "on-tertiary-container": "#ffb6ab", "primary-fixed": "#bbefc1", "on-secondary-fixed": "#00210c", "tertiary-fixed-dim": "#ffb4a9", "secondary": "#006d37", "surface-variant": "#e4e2dd", "on-primary-container": "#a1d4a8", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#410000", "error-container": "#ffdad6", "outline-variant": "#c1c9be", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#22502e", "tertiary": "#7f0403", "on-primary-fixed": "#00210b", "surface-container-high": "#eae8e3", "surface-container-low": "#f5f3ee", "tertiary-container": "#a12218", "on-secondary-container": "#007239", "background": "#fbf9f4", "error": "#ba1a1a", "inverse-surface": "#30312e", "tertiary-fixed": "#ffdad5", "inverse-primary": "#a0d3a7", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-dim": "#dbdad5", "on-error-container": "#93000a", "on-background": "#1b1c19", "inverse-on-surface": "#f2f1ec", "surface-container-highest": "#e4e2dd", "outline": "#717970", "primary-fixed-dim": "#a0d3a7", "secondary-container": "#7bf8a1", "surface": "#fbf9f4", "on-error": "#ffffff", "on-surface": "#1b1c19", "surface-container": "#f0eee9", "primary": "#164525", "on-tertiary-fixed-variant": "#8e130c", "surface-bright": "#fbf9f4", "on-surface-variant": "#414941", "primary-container": "#2f5d3a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2rem" }, fontFamily: { "label-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-md-medium": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "26px", fontWeight: "600" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "26px", fontWeight: "400" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-md-medium": ["16px", { lineHeight: "24px", fontWeight: "500" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; background-color: #fbf9f4; } body { overscroll-behavior: y none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(26,46,32,0.04)]"><div class="h-16 max-w-[428px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BaghBaan AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGoJ5KVUKgK4_LvDh4184rvEnWmZsZ7BlvKbk5rrfSKGCguMuzNuSBPHxX9LJnuNsYzDbTwHpNsZEJHXTlCRLKme1eWPj_LTXfc0sIvcg2uReRJI-dSfr0VlUlRKa0EhYWBQ0dPs83hcfrcUSsXu3T0S1yj1Q5lnDKtJxwiUY38synnTQ3z4m254WvxHuzPKO39K-eZGKVS7yUFtclFpzr_QxB7rvPoVRB9Z_lrnc"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary leading-none">BaghBaan AI</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-tight">Orchard Guardian</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Switch Language" class="min-h-[44px] px-space-sm py-space-xs bg-surface-container rounded-full flex items-center gap-1 text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="font-label-sm text-label-sm font-bold text-primary">EN</span><span class="text-outline-variant font-light text-label-sm">|</span><span class="font-label-sm text-label-sm font-medium text-on-surface-variant">اردو</span></button><div class="flex items-center justify-center min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9EcU4Tm6Lf1ZchyAtt_Be9h0vtPOy3N4ztOi3WqqbUtptVBynUUfwbo7eK40pub5iEtVK1L_Oev5BBCxkSe70HRAjEu3sG7vC2d665Y-l85HirFzqozeQjW8UeSlB3ZcGxB49GOOuKMbQEB-wXJZWgvuZf6XDN5mA5jubLL78lgAW7e54Mxhwkw5TtdtJapIijhQkyIFpO3tupTHhekYwzM0LCgEwq68mxq35jnk"/></div></div></div><div class="sr-only">Home</div></header><main class="flex-1 w-full max-w-[428px] mx-auto px-margin pt-16 pb-28 bg-surface relative"><div class="flex flex-col w-full gap-space-md">
+<!-- Farmer Outdoor Greeting Banner -->
+<section class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Field Conditions</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+        Spray Safe
+      </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight leading-snug">
+      Aadaab, Ghulam Mohammad
+    </h1>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">pin_drop</span>
+<span class="truncate">Sopore Apple Belt • 24°C Sunny • Ideal spraying weather</span>
+</div>
+</section>
+<!-- Big Dual Action Surface (Outdoor Tactile Priority) -->
+<section class="flex flex-col gap-space-sm">
+<!-- Primary CTA: Scan a Leaf -->
+<a class="w-full min-h-[64px] bg-primary-container active:bg-primary text-on-primary rounded-xl p-space-md flex items-center justify-between shadow-md active:scale-[0.99] transition-transform" data-path="scan-leaf" href="#">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold leading-tight">Scan a Leaf</span>
+<span class="font-label-sm text-label-sm text-on-primary-container leading-tight mt-0.5">Instant AI diagnosis in 3 sec</span>
+</div>
+</div>
+<div class="w-9 h-9 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px] text-on-primary">arrow_forward</span>
+</div>
+</a>
+<!-- Secondary CTA: Upload from Gallery -->
+<button class="w-full min-h-[52px] bg-surface-container-lowest text-primary rounded-xl px-space-md py-space-sm flex items-center justify-center gap-space-sm shadow-sm active:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px] text-primary">add_photo_alternate</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Upload from Gallery</span>
+</button>
+</section>
+<!-- Kashmir Ag Dept Advisory Notice -->
+<section class="bg-surface-container-high rounded-xl p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-tertiary uppercase tracking-wide">Agri Dept Kashmir Advisory</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Today</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-snug">
+        Preventive spray advisory active for <em class="font-semibold not-italic text-on-surface">Venturia inaequalis</em> (Apple Scab) following recent rain in Baramulla district.
+      </p>
+</div>
+</section>
+<!-- Sunlight & Photography Guide Card -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Tips for 99% AI Accuracy</h2>
+</div>
+<ul class="flex flex-col gap-space-sm mt-1">
+<li class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">light_mode</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+          Bright daylight <span class="text-on-surface-variant font-normal">(avoid deep cast shadows)</span>
+</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">filter_center_focus</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+          Single leaf filling the viewfinder frame completely
+        </span>
+</li>
+<li class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">pan_tool</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+          Plain backdrop <span class="text-on-surface-variant font-normal">(palm of hand or tree bark behind)</span>
+</span>
+</li>
+</ul>
+</section>
+<!-- Recent Scans Quick Section -->
+<section class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Recent Orchard Scans</h2>
+<a class="font-label-sm text-label-sm font-bold text-primary hover:underline flex items-center" data-path="history" href="#">
+        History
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1: Apple Scab -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up photograph of an apple tree leaf exhibiting olive-green and brown velvety fungal scab lesions on the upper blade surface, photographed under crisp mountain sunlight in Kashmir, hyper-detailed agricultural field pathology reference image." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5p1kPMP1RYz4XaCaGbV6b6z0ODmL7rF0jdlTP2zcXFysmJFlMMRv6vB0v8mySxz7gTqCAqeJdZ3-slBfgUVkyTdedK2Ze-6imdcfV_TvXGsb6MrMmLKnHu54fbDRzSn1XPYWApl-jwAuM84DNao_pcLV9nguo8k9fw8wyP6nF3PM19nmRHpKVsPFix9RAfwSj_VyjxjVZH10Jqk_y-0zdQfzUfGRU-OdXrq2dAQc"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div class="flex items-center justify-between gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Apple Scab</span>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+              Action
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1 truncate">
+            Block B - Tree 14 • 2 hours ago
+          </span>
+<div class="flex items-center gap-1 mt-2 text-error font-label-sm text-label-sm font-bold">
+<span>Fungicide Spray Required</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Healthy Leaf -->
+<article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant, glossy healthy green apple leaf on a Golden Delicious branch in a high altitude Kashmiri orchard, sunlight shimmering across crisp leaf venation with zero blemishes, rich agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH4JL9xc8STUJvdtazKETCx104oX4wnXWsamloMneX5b7Yjv7vOM-s96PHioe3x7csdeqI5TxQD3TJKMAi2u2-TkX_0QMNzaYy9CUZH6uWwwJqpZE8OQnhfjedg6WUQvAb8uwDuVkf-eVN9Fd9fse8iqdeQiQQr3lWJoWMfm-iGqA1H97UzC4aK1lGoIRcJ2gCoKrS1X458h59UrAVhfSTiunqvCCDSWPWAhQgb4E"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0 justify-between">
+<div class="flex items-center justify-between gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Healthy Leaf</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Clear
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1 truncate">
+            Block A - Golden Delicious • Yesterday
+          </span>
+<div class="flex items-center gap-1 mt-2 text-secondary font-label-sm text-label-sm font-bold">
+<span>Optimum Vigor</span>
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+</div>
+</div>
+</article>
+</div>
+<!-- View All History Prompt Link -->
+<a class="w-full py-space-sm flex items-center justify-center gap-1 text-primary font-label-lg text-label-lg font-bold hover:underline active:opacity-80" data-path="history" href="#">
+<span>View all 18 scans in History</span>
+<span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+</a>
+</section>
+</div>
+<script>
+  // Micro-interaction: light outdoor haptic simulation on high-priority action click
+  document.querySelectorAll('a[data-path="scan-leaf"], button').forEach((element) => {
+    element.addEventListener('click', () => {
+      if (window.navigator && window.navigator.vibrate) {
+        window.navigator.vibrate(35);
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(26,46,32,0.06)]" data-active-classes="text-primary font-bold"><div class="max-w-[428px] mx-auto h-[68px] px-gutter-mobile flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] text-on-surface-variant hover:text-primary transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm mt-0.5">History</span></a><div class="relative -top-4 flex items-center justify-center"><a class="flex flex-col items-center justify-center group" data-path="scan-leaf" href="#"><div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_20px_-4px_rgba(22,69,37,0.35)] ring-4 ring-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[28px]">photo_camera</span></div><span class="font-label-sm text-label-sm text-primary font-semibold mt-1">Scan Leaf</span></a></div><a class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] text-on-surface-variant hover:text-primary transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5">Library</span></a><a class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] text-on-surface-variant hover:text-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[24px]">settings</span><span class="font-label-sm text-label-sm mt-0.5">Settings</span></a></div></nav></body></html>

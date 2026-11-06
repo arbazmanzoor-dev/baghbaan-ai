@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#30312e", "secondary-container": "#7bf8a1", "primary-fixed": "#bbefc1", "surface-variant": "#e4e2dd", "tertiary": "#7f0403", "background": "#fbf9f4", "on-tertiary": "#ffffff", "on-primary-fixed": "#00210b", "on-secondary-fixed-variant": "#005228", "surface-container-high": "#eae8e3", "on-tertiary-fixed": "#410000", "error": "#ba1a1a", "outline": "#717970", "outline-variant": "#c1c9be", "on-tertiary-fixed-variant": "#8e130c", "on-background": "#1b1c19", "primary-container": "#2f5d3a", "surface-container-highest": "#e4e2dd", "surface-container-lowest": "#ffffff", "on-surface-variant": "#414941", "on-error-container": "#93000a", "on-tertiary-container": "#ffb6ab", "on-primary-fixed-variant": "#22502e", "on-secondary-fixed": "#00210c", "tertiary-fixed": "#ffdad5", "surface-bright": "#fbf9f4", "secondary-fixed": "#7efba4", "primary": "#164525", "surface-tint": "#3a6844", "primary-fixed-dim": "#a0d3a7", "secondary-fixed-dim": "#61de8a", "on-primary": "#ffffff", "surface-container-low": "#f5f3ee", "secondary": "#006d37", "surface": "#fbf9f4", "error-container": "#ffdad6", "surface-dim": "#dbdad5", "tertiary-container": "#a12218", "inverse-on-surface": "#f2f1ec", "on-secondary-container": "#007239", "inverse-primary": "#a0d3a7", "on-error": "#ffffff", "on-surface": "#1b1c19", "tertiary-fixed-dim": "#ffb4a9", "on-secondary": "#ffffff", "surface-container": "#f0eee9", "on-primary-container": "#a1d4a8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "gutter": "1rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem" }, fontFamily: { "label-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-md": ["Inter"], "body-md-medium": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md-medium": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fbf9f4;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-12 h-12 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">How It Works</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Bookmark or Share" class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">bookmark</span></button><button aria-label="Share" class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Mission Card with Organic Orchard Visual Framing -->
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-lg shadow-md mt-space-md">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary-container/40 pointer-events-none blur-2xl"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container w-fit">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Agritech Initiative</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary leading-tight">
+          Empowering Kashmiri Apple Orchards with Edge AI
+        </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+          Built in collaboration with SKUAST-K Kashmir and local apple growers to detect foliar diseases in under 3 seconds—completely offline.
+        </p>
+<!-- Subtle Localized Verification Tag -->
+<div class="flex items-center gap-2 pt-2 text-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm">Field-tested across Shopian, Sopore &amp; Baramulla belts</span>
+</div>
+</div>
+</div>
+<!-- Diagnostic Pipeline Section -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">On-Device Technology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">3-Step AI Pipeline</h3>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-surface-container text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_connected_no_internet_4_bar</span>
+<span class="font-label-sm text-label-sm font-medium">100% Offline</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">filter_center_focus</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">1. Leaf Macro Framing</h4>
+<span class="text-outline text-label-sm font-label-sm">Stage I</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Farmer captures a leaf in natural daylight. Edge computer isolates contour and normalizes lighting variations.
+              </p>
+</div>
+</div>
+<!-- Supporting Inline Visual Card -->
+<div class="relative h-28 rounded-lg overflow-hidden mt-1 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up macro framing of an apple tree leaf held by a Kashmiri orchardist under soft natural morning sunlight, surrounded by green orchard branches, high detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCzq_Gxwy_7snlB3_OztdqKj3nfhFx60rkz5be3hrw-Gf3iY4S3uK3lb8fHxncxES2W_ntI20A_fEPxcNlTFPWYxxo424sV6IMSKva6N2sDgjoUNY203SdbHoOqmdXjHU-ErOgGlNujL8lWWy3TCE6M7dvvz1radgcb6ju1OyTJJ-td-mHg_TA6d2yYLAGwK0yTbe5m_rXN0bzb9D2NWIcdi0m3My-RNt7xMGtK-8"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center">
+<div class="bg-surface-container-lowest/90 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">crop_free</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Contour Lock &amp; Lighting Normalized</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">2. Deep Vision Convolutional AI</h4>
+<span class="text-outline text-label-sm font-label-sm">Stage II</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                On-device neural model analyzes texture, spore patterns, and necrotic discoloration across 512 multi-dimensional feature tensors.
+              </p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">neurology</span>
+<span class="font-label-sm text-label-sm text-on-surface">512 Feature Matrix</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Zero Cloud Latency</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_florist</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">3. Kashmir-Specific Diagnosis</h4>
+<span class="text-outline text-label-sm font-label-sm">Stage III</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Validated against 25,000+ local orchard leaf samples collected across Sopore, Shopian, and Baramulla apple belts.
+              </p>
+</div>
+</div>
+<!-- Target Pathogen Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Apple Scab</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Black Rot</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Cedar Apple Rust</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Healthy Foliage</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Impact & Model Performance Metrics -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">Field Validation Benchmark</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Model Performance &amp; Accuracy</h3>
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary tracking-tight font-bold">98.4%</div>
+<div class="font-label-md text-label-md text-on-surface mt-0.5">Validation Accuracy</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-snug">Across major apple leaf pathogens</div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary tracking-tight font-bold">25k+</div>
+<div class="font-label-md text-label-md text-on-surface mt-0.5">Local Specimen</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-snug">Curated training dataset across Kashmir</div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary tracking-tight font-bold">0.8s</div>
+<div class="font-label-md text-label-md text-on-surface mt-0.5">Inference Speed</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-snug">Instant processing without internet</div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[18px]">category</span>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary tracking-tight font-bold">4</div>
+<div class="font-label-md text-label-md text-on-surface mt-0.5">Key Pathogens</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-1 leading-snug">Scab, Rot, Rust, and Healthy Leaves</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Critical Limitations & Agricultural Safety Notice -->
+<div class="bg-error-container text-on-error-container rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[24px]">warning</span>
+<h4 class="font-title-md text-title-md text-on-error-container">Critical Agronomic Safety Advisory</h4>
+</div>
+<p class="font-body-md text-body-md text-on-error-container leading-relaxed">
+        BaghBaan AI is an assistive decision tool, not a chemical prescription. Always cross-verify with your local Horticulture Development Officer (HDO) before purchasing or spraying expensive fungicide combinations.
+      </p>
+<div class="flex items-center gap-2 mt-2 pt-2 bg-error/10 -mx-4 -mb-4 px-4 py-2.5 rounded-b-xl">
+<span class="material-symbols-outlined text-[18px] text-error">assignment_late</span>
+<span class="font-label-sm text-label-sm text-on-error-container font-medium">Follow SKUAST-K Seasonal Spray Schedules</span>
+</div>
+</div>
+<!-- Collaborative Team & Institutions Section -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider font-semibold">Institutional Stewardship</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Collaborative Partners</h3>
+<div class="flex flex-col gap-2">
+<!-- Partner 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">SKUAST-Kashmir</div>
+<div class="font-body-md text-body-md text-on-surface-variant truncate">Faculty of Horticulture, Shalimar Campus</div>
+</div>
+</div>
+<!-- Partner 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">agriculture</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">Directorate of Horticulture Kashmir</div>
+<div class="font-body-md text-body-md text-on-surface-variant truncate">Department of Agriculture Production, J&amp;K</div>
+</div>
+</div>
+<!-- Partner 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate">J&amp;K Apple Farmers Collective</div>
+<div class="font-body-md text-body-md text-on-surface-variant truncate">Field Trial Growers across South &amp; North Kashmir</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact & Feedback Card -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface">Specimen Contributions &amp; Feedback</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Have feedback or new disease specimens to donate? Contact the Research Team to expand open diagnostic models for the Kashmir Valley.
+      </p>
+<button class="h-12 w-full rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center justify-center gap-2 active:bg-surface-container-high transition-colors shadow-sm" onclick="alert('Thank you for contributing. Send geo-tagged leaf photos to research@baghbaan.ai or contact SKUAST-K Plant Pathology Lab.');" type="button">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span>Contact Research Desk</span>
+</button>
+</div>
+<!-- Action Section -->
+<div class="pt-2">
+<button class="h-14 w-full rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-3 active:bg-primary-container transition-colors shadow-md" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+<span>Back to Orchard / Start Scanning</span>
+</button>
+<div class="text-center font-label-sm text-label-sm text-outline mt-3">
+        BaghBaan Edge Core v2.4 • Offline Model Hash #SKU-2025-08
+      </div>
+</div>
+</div>
+</div></main></body></html>

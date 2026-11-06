@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#3a6844", "secondary-fixed-dim": "#61de8a", "secondary-fixed": "#7efba4", "on-secondary-fixed-variant": "#005228", "on-tertiary-container": "#ffb6ab", "primary-fixed": "#bbefc1", "on-secondary-fixed": "#00210c", "tertiary-fixed-dim": "#ffb4a9", "secondary": "#006d37", "surface-variant": "#e4e2dd", "on-primary-container": "#a1d4a8", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#410000", "error-container": "#ffdad6", "outline-variant": "#c1c9be", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#22502e", "tertiary": "#7f0403", "on-primary-fixed": "#00210b", "surface-container-high": "#eae8e3", "surface-container-low": "#f5f3ee", "tertiary-container": "#a12218", "on-secondary-container": "#007239", "background": "#fbf9f4", "error": "#ba1a1a", "inverse-surface": "#30312e", "tertiary-fixed": "#ffdad5", "inverse-primary": "#a0d3a7", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-dim": "#dbdad5", "on-error-container": "#93000a", "on-background": "#1b1c19", "inverse-on-surface": "#f2f1ec", "surface-container-highest": "#e4e2dd", "outline": "#717970", "primary-fixed-dim": "#a0d3a7", "secondary-container": "#7bf8a1", "surface": "#fbf9f4", "on-error": "#ffffff", "on-surface": "#1b1c19", "surface-container": "#f0eee9", "primary": "#164525", "on-tertiary-fixed-variant": "#8e130c", "surface-bright": "#fbf9f4", "on-surface-variant": "#414941", "primary-container": "#2f5d3a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "1.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2rem" }, fontFamily: { "label-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-md-medium": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "26px", fontWeight: "600" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "26px", fontWeight: "400" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-md-medium": ["16px", { lineHeight: "24px", fontWeight: "500" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; background-color: #fbf9f4; } body { overscroll-behavior: y none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(26,46,32,0.04)]"><div class="h-16 max-w-[428px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BaghBaan AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGoJ5KVUKgK4_LvDh4184rvEnWmZsZ7BlvKbk5rrfSKGCguMuzNuSBPHxX9LJnuNsYzDbTwHpNsZEJHXTlCRLKme1eWPj_LTXfc0sIvcg2uReRJI-dSfr0VlUlRKa0EhYWBQ0dPs83hcfrcUSsXu3T0S1yj1Q5lnDKtJxwiUY38synnTQ3z4m254WvxHuzPKO39K-eZGKVS7yUFtclFpzr_QxB7rvPoVRB9Z_lrnc"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary leading-none">BaghBaan AI</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-tight">Orchard Guardian</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Switch Language" class="min-h-[44px] px-space-sm py-space-xs bg-surface-container rounded-full flex items-center gap-1 text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="font-label-sm text-label-sm font-bold text-primary">EN</span><span class="text-outline-variant font-light text-label-sm">|</span><span class="font-label-sm text-label-sm font-medium text-on-surface-variant">اردو</span></button><div class="flex items-center justify-center min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9EcU4Tm6Lf1ZchyAtt_Be9h0vtPOy3N4ztOi3WqqbUtptVBynUUfwbo7eK40pub5iEtVK1L_Oev5BBCxkSe70HRAjEu3sG7vC2d665Y-l85HirFzqozeQjW8UeSlB3ZcGxB49GOOuKMbQEB-wXJZWgvuZf6XDN5mA5jubLL78lgAW7e54Mxhwkw5TtdtJapIijhQkyIFpO3tupTHhekYwzM0LCgEwq68mxq35jnk"/></div></div></div><div class="sr-only">Library</div></header><main class="flex-1 w-full max-w-[428px] mx-auto px-margin pt-16 pb-28 bg-surface relative"><div class="flex flex-col w-full gap-space-md">
+<!-- Header Context Badge & Search Section -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">local_library</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary">Field Reference Guide</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">offline_pin</span>
+        Offline Ready
+      </span>
+</div>
+<!-- Search Input Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input aria-label="Search apple leaf diseases" class="w-full h-[52px] pl-11 pr-12 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="disease-search-input" placeholder="Search disease, symptoms, or sprays..." type="search"/>
+<button aria-label="Clear search query" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface opacity-0 pointer-events-none transition-opacity" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+</button>
+</div>
+<!-- Filter Chips Scrollable Track -->
+<div aria-label="Filter diseases by category" class="flex items-center gap-2 overflow-x-auto pb-1 -mx-margin px-margin scrollbar-none" role="tablist">
+<button aria-pressed="true" class="filter-chip active flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-all" data-filter="all" type="button">
+<span>All</span>
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm">4</span>
+</button>
+<button aria-pressed="false" class="filter-chip flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all" data-filter="fungal" type="button">
+<span class="material-symbols-outlined text-[16px]">coronavirus</span>
+<span>Fungal Diseases</span>
+</button>
+<button aria-pressed="false" class="filter-chip flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all" data-filter="healthy" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Healthy</span>
+</button>
+<button aria-pressed="false" class="filter-chip flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-all" data-filter="kashmir" type="button">
+<span class="material-symbols-outlined text-[16px]">terrain</span>
+<span>Kashmir Valley Common</span>
+</button>
+</div>
+</div>
+<!-- Disease Cards List -->
+<div class="flex flex-col gap-space-md" id="disease-cards-container">
+<!-- Card 1: Healthy Leaf -->
+<article class="disease-card flex flex-col p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" data-categories="all healthy" data-keywords="healthy safe normal leaf chlorophyll clean unblemished smooth green">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Healthy Leaf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-0.5">صحت مند پتہ • Malus domestica</span>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          No Disease • Safe
+        </span>
+</div>
+<div class="flex gap-4 items-center mb-3.5">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close-up macro photography of a perfectly healthy Kashmiri apple tree leaf under soft sunlight. Vibrant lush forest green hue, smooth unblemished margins, distinct natural venation pattern, glossy waxy leaf surface without any spots, lesions, powder, or chlorosis. Clean organic natural agricultural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7ZuHPMYLh1GWQKJRkuICZm5olfV4TiswTttT8VofGmECIUmFBNnjmE-gvheqP9xSnvIlbtdeDF8JLlcEX_fZxj0poklZQdHMX4PhlWhya_Vb1QCNV8iJz4o-znQxj34U1PF7AveNNLicXfLvCs9uBcjjQZBoA9KArrelKEP2M4Sd76a2KdLCni8O4ohuvpsHJ14aBkntEA2r2vrZ0lHVD2DngpN7Ctt9bR8MwR8"/>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Normal vibrant green leaf structure. No chlorosis, fungal lesions, or necrotic patches observed.
+          </p>
+<div class="flex items-center gap-1.5 mt-2 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">yard</span>
+<span>Benchmark standard for canopy health</span>
+</div>
+</div>
+</div>
+<!-- Key Signs Collapsible / Highlight -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+          Key Signs &amp; Indicators:
+        </span>
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">Smooth margins</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">Uniform chlorophyll</span>
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">Healthy venation</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Apple Scab -->
+<article class="disease-card flex flex-col p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" data-categories="all fungal kashmir" data-keywords="apple scab venturia inaequalis sopore shopian pre-harvest danger lesions black velvety olive green spray fungicide mancozeb">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Apple Scab</span>
+<span class="font-label-sm text-label-sm text-error font-semibold mt-0.5">سیب کی خارش • Venturia inaequalis</span>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+          High Threat
+        </span>
+</div>
+<div class="flex gap-4 items-center mb-3">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close-up botanical macro photo of an apple leaf infected with severe Apple Scab disease. Distinct olive-green velvety to soot-black circular lesions with irregular borders scattered across the upper leaf blade. Slight leaf distortion and yellowing around lesion perimeters. Daylight illumination against orchard backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN1uGPCn8hqKqC0E0h51sOl-DJpsggit6sFzcrDs0zCRdGNbglOCXlPAS2MkMFmtuab1RW2BqMgOmEXfG655sqb81kLzLzrmIGOnqXJ2fjoxdBt5BGKhPCjPSC2SOjfIjnEIqCjsqOyNM6rcTFPideIGluP_byBagoBQ93OR6wVsHNUl-OUBVZnJshiHkE3C7AUe7lbjxzW94bRubwgnVJk8QAY8dKCMcGE-YkuHg"/>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Most prevalent disease in Sopore and Shopian valleys. Caused by Venturia inaequalis fungus.
+          </p>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-tertiary font-semibold">
+            Pre-Harvest Hazard
+          </span>
+</div>
+</div>
+<!-- Quick Actionable Bullet Points -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5 shrink-0">radio_button_checked</span>
+<p class="font-body-md text-body-md text-on-surface text-sm leading-snug">
+<strong class="font-semibold text-on-surface">Early Symptoms:</strong> Dull olive-green spots with velvety spores on leaf surface.
+          </p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5 shrink-0">event_repeat</span>
+<p class="font-body-md text-body-md text-on-surface text-sm leading-snug">
+<strong class="font-semibold text-on-surface">Critical Spray Window:</strong> Pink bud to petal fall stage before monsoon rain spells.
+          </p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5 shrink-0">medication_liquid</span>
+<p class="font-body-md text-body-md text-on-surface text-sm leading-snug">
+<strong class="font-semibold text-on-surface">Advisory:</strong> Mancozeb 75 WP or Captan 50 WP spray within 48h of rainfall.
+          </p>
+</div>
+</div>
+</article>
+<!-- Card 3: Black Rot -->
+<article class="disease-card flex flex-col p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" data-categories="all fungal kashmir" data-keywords="black rot frogeye leaf spot botryosphaeria obtusa purple margins concentric rings fruit rot mummies canker">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Black Rot</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-0.5">Frogeye Leaf Spot • Botryosphaeria obtusa</span>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[15px]">report</span>
+          Moderate Threat
+        </span>
+</div>
+<div class="flex gap-4 items-center mb-3">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Macro detailed photo of an apple leaf afflicted with Frogeye Leaf Spot and Black Rot. Circular pale tan spots with dark purplish-brown distinct margins creating a concentric target-like eye appearance. Weathered orchard natural light highlighting leaf texture and necrotic center rings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwC-40Q2BYc68ALDvQzcrPtuWAhLWq3htC-fK7axjweOYqT-YmCTLVdhf_GPpsm3b2kpdaWoy4uK4lRsqKjzQo4vTNA91vjZHeTg2SrlnCOrk08gHGhaW8a6KPtKSHA0SdS8BQlDkEejmZ4JJNTnGcV2Wb3v1EWhc-su50xfzqNkRPRxjztWbmHYpMPI1-0J94F4wGKVAdyCKTmch8g40bgSwwkQV7xcRrtJrauMg"/>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Fungal infection affecting leaves and fruit mummies on older Kashmiri apple blocks.
+          </p>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-tertiary-container font-semibold">
+            Fruit Rot &amp; Canker Risk
+          </span>
+</div>
+</div>
+<!-- Quick Characteristic Indicators -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">diagnosis</span>
+          Diagnostic Markers:
+        </span>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-body-md text-body-md text-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Circular brown spots with distinctive purple halo margins
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Overwinters on pruned twigs, dead wood, and shriveled fruit mummies
+          </span>
+</div>
+</div>
+</article>
+<!-- Card 4: Cedar Apple Rust -->
+<article class="disease-card flex flex-col p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" data-categories="all fungal" data-keywords="cedar apple rust gymnosporangium juniperi-virginianae rust orange yellow pustules horn tubes galls">
+<div class="flex items-start justify-between gap-3 mb-3">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Cedar Apple Rust</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-0.5">Gymnosporangium juniperi-virginianae</span>
+</div>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[15px]">info</span>
+          Localized • Spore Galls
+        </span>
+</div>
+<div class="flex gap-4 items-center mb-3">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Sharp botanical macro photograph of an apple tree leaf with Cedar Apple Rust infection. Striking bright yellow and vivid orange raised pustules on the upper leaf blade surface with tiny dark dots at the center. Clean contrast against green foliage in outdoor morning orchard light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYuBdYsfOXJFP3WZbKbWmDZNq0r6oNa2ZqjSLCyGj1HrdOUdxRrpILEnyvMCdes6EJqnzTQyXYlnbMUhIpWom4NqNIbLxJGWMuDIscsO1ldfBujgSdyOgJy71PsPPSAFs3b7Mon5VLpVK72zLRklcbvlaDcN_SL_4VTdVdjiFrUDAh-2br-CA27-4uZRFIq3RHmNzSnWOdJR87XPlH_ncRzxWuvqIemZ92YVZ34_c"/>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Bright yellow-orange spots on upper leaf surface with horn-like tube structures beneath.
+          </p>
+<span class="inline-block mt-1 font-label-sm text-label-sm text-primary font-semibold">
+            Alternate Host: Juniper Trees
+          </span>
+</div>
+</div>
+<!-- Quick Characteristic Indicators -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">nest_eco_leaf</span>
+          Identification Guide:
+        </span>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-body-md text-body-md text-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Bright orange pustules develop in late spring / early summer
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Underside develops cylindrical tube-like aecia structures
+          </span>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State (Hidden by default, shown when query has no matches) -->
+<div class="hidden flex-col items-center justify-center p-8 rounded-2xl bg-surface-container text-center gap-3" id="no-results-state">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">No Conditions Found</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[280px]">
+      Try searching for specific symptoms like "spots", "spores", "rust", or clear your filter.
+    </p>
+<button class="h-10 px-4 mt-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md active:scale-95 transition-transform" id="reset-search-btn" type="button">
+      Reset Filters
+    </button>
+</div>
+<!-- Kashmir Apple Helpline Bottom Card -->
+<aside class="flex flex-col p-5 rounded-2xl bg-surface-container-high shadow-sm mt-space-xs">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight">Need Field Confirmation?</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">SKUAST &amp; Horticulture Directorate</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+      Have an unidentified leaf disease or rare infestation? Speak directly with Kashmiri apple pathology specialists.
+    </p>
+<a aria-label="Call Kashmir Apple Helpline at 1800 180 1551" class="min-h-[56px] w-full px-5 rounded-xl bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg flex items-center justify-between shadow-md active:scale-[0.98] transition-all" href="tel:18001801551">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<div class="flex flex-col text-left">
+<span class="font-semibold leading-tight">Call Kashmir Apple Helpline</span>
+<span class="font-label-sm text-label-sm opacity-90">1800-180-1551 (Toll Free)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</aside>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('disease-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const resetBtn = document.getElementById('reset-search-btn');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const cards = document.querySelectorAll('.disease-card');
+    const emptyState = document.getElementById('no-results-state');
+
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    function applyFilters() {
+      let visibleCount = 0;
+      const query = searchQuery.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const categories = (card.getAttribute('data-categories') || '').toLowerCase();
+        const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+        const cardText = card.textContent.toLowerCase();
+
+        const matchesCategory = (currentFilter === 'all') || categories.includes(currentFilter);
+        const matchesQuery = query === '' || keywords.includes(query) || cardText.includes(query);
+
+        if (matchesCategory && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+
+      if (clearBtn) {
+        if (query.length > 0) {
+          clearBtn.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          clearBtn.classList.add('opacity-0', 'pointer-events-none');
+        }
+      }
+    }
+
+    // Filter chip button actions
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', function() {
+        filterChips.forEach(c => {
+          c.classList.remove('active', 'bg-primary-container', 'text-on-primary');
+          c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          c.setAttribute('aria-pressed', 'false');
+        });
+
+        this.classList.add('active', 'bg-primary-container', 'text-on-primary');
+        this.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        this.setAttribute('aria-pressed', 'true');
+
+        currentFilter = this.getAttribute('data-filter') || 'all';
+        applyFilters();
+      });
+    });
+
+    // Search input handler
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        searchQuery = e.target.value;
+        applyFilters();
+      });
+    }
+
+    // Clear search
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        if (searchInput) {
+          searchInput.value = '';
+          searchQuery = '';
+          searchInput.focus();
+        }
+        applyFilters();
+      });
+    }
+
+    // Reset button in empty state
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function() {
+        if (searchInput) {
+          searchInput.value = '';
+          searchQuery = '';
+        }
+        const allChip = document.querySelector('.filter-chip[data-filter="all"]');
+        if (allChip) {
+          allChip.click();
+        } else {
+          currentFilter = 'all';
+          applyFilters();
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(26,46,32,0.06)]" data-active-classes="text-primary font-bold"><div class="max-w-[428px] mx-auto h-[68px] px-gutter-mobile flex items-center justify-around"><a class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] text-on-surface-variant hover:text-primary transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm mt-0.5">History</span></a><div class="relative -top-4 flex items-center justify-center"><a class="flex flex-col items-center justify-center group" data-path="scan-leaf" href="#"><div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_20px_-4px_rgba(22,69,37,0.35)] ring-4 ring-surface active:scale-95 transition-transform"><span class="material-symbols-outlined text-[28px]">photo_camera</span></div><span class="font-label-sm text-label-sm text-primary font-semibold mt-1">Scan Leaf</span></a></div><a aria-current="page" class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] transition-colors text-primary font-bold" data-path="library" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5">Library</span></a><a class="flex flex-col items-center justify-center min-h-[52px] min-w-[56px] text-on-surface-variant hover:text-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[24px]">settings</span><span class="font-label-sm text-label-sm mt-0.5">Settings</span></a></div></nav></body></html>

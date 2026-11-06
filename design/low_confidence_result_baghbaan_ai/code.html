@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#717970", "on-primary-container": "#a1d4a8", "on-primary-fixed-variant": "#22502e", "primary-fixed": "#bbefc1", "on-tertiary-container": "#ffb6ab", "surface-container": "#f0eee9", "on-secondary": "#ffffff", "on-secondary-container": "#007239", "on-secondary-fixed": "#00210c", "surface-container-high": "#eae8e3", "tertiary-container": "#a12218", "secondary": "#006d37", "error": "#ba1a1a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#8e130c", "secondary-fixed-dim": "#61de8a", "on-error-container": "#93000a", "inverse-primary": "#a0d3a7", "on-surface-variant": "#414941", "tertiary-fixed": "#ffdad5", "on-tertiary": "#ffffff", "primary-fixed-dim": "#a0d3a7", "on-surface": "#1b1c19", "secondary-container": "#7bf8a1", "surface-container-lowest": "#ffffff", "primary-container": "#2f5d3a", "secondary-fixed": "#7efba4", "surface-dim": "#dbdad5", "surface-container-low": "#f5f3ee", "on-primary": "#ffffff", "surface-variant": "#e4e2dd", "on-error": "#ffffff", "on-background": "#1b1c19", "on-tertiary-fixed": "#410000", "inverse-surface": "#30312e", "surface-tint": "#3a6844", "primary": "#164525", "surface-container-highest": "#e4e2dd", "on-primary-fixed": "#00210b", "tertiary-fixed-dim": "#ffb4a9", "surface": "#fbf9f4", "on-secondary-fixed-variant": "#005228", "inverse-on-surface": "#f2f1ec", "outline-variant": "#c1c9be", "background": "#fbf9f4", "tertiary": "#7f0403", "surface-bright": "#fbf9f4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "margin": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-md": "1rem", "margin-tablet": "1.5rem" }, "fontFamily": { "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "label-md": ["Inter"], "title-md": ["Plus Jakarta Sans"], "body-md-medium": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md-medium": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="min-w-[48px] min-h-[48px] rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md text-on-surface truncate">Low Confidence Result</h1></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Status Context Strip -->
+<div class="px-gutter pt-space-sm pb-space-xs flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">info</span>
+<span class="font-label-sm text-label-sm">Scan #BB-7829-KMR</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology_alt</span>
+<span class="font-label-sm text-label-sm">Model v3.8 Field-Optimized</span>
+</div>
+</div>
+<!-- Primary Inconclusive Alert Hero Bento -->
+<div class="px-gutter mt-space-sm">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-5 shadow-md flex flex-col gap-4">
+<!-- Ambient Sun-Glare Resistant Amber Accent Bar -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600"></div>
+<!-- Header Row with Badge & Amber Shield -->
+<div class="flex items-start justify-between gap-3 pt-1">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 shadow-sm text-amber-700">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">shield_question</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-amber-800 tracking-wider uppercase font-semibold">Diagnosis Inconclusive</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">We're not sure about this one</span>
+</div>
+</div>
+</div>
+<!-- Bilingual Kashmiri / Urdu Guidance Banner -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<p class="font-body-md text-body-md text-on-surface text-right font-medium" dir="rtl" lang="ur">
+          ہم اس تصویر کے بارے میں پراعتماد نہیں ہیں
+        </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-right" dir="rtl" lang="ur">
+          صحیح تشخیص خٲطرٕ دُبارٕ صاف فوٹو تُلِیو
+        </p>
+</div>
+<!-- Metric & Leaf Thumbnail Split View -->
+<div class="grid grid-cols-5 gap-3 items-center bg-surface-container p-3 rounded-xl">
+<!-- Leaf Thumbnail with Warning Overlay -->
+<div class="col-span-2 relative aspect-square rounded-lg overflow-hidden shadow-sm bg-surface-dim">
+<img class="w-full h-full object-cover filter contrast-75 brightness-95" data-alt="Close-up macro of an apple leaf in a lush Kashmiri orchard during mid-day sunlight, blurred focus with harsh tree branch shadows cutting across the leaf surface, deep natural greens with ambiguous brown spots, shallow depth of field, agricultural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqQokTEhUE2xkALgWb_ZwHWEcAxJmf7FtB6LlXOOdiVsbfEkhhW6yAej506LqaLdRQfWMgOUVJCQCtubJi5T32_cRliZWOc7gBix5t9lViacqM69kT-QBrUTV98u9zkEyxXkzgJ628J8wVjt6EXp3ULhGMESH51mDjUQIf4CZGHpBvrfZpQ50z3Svb_ad60hYwrduwoIUzZzo3pjcJ9Xtg86AnD9SZJfS1EHAdc6E"/>
+<div class="absolute inset-0 bg-surface-dim/40 backdrop-blur-[1px] flex flex-col items-center justify-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 shadow-md flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px] text-amber-700">help</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-container-lowest font-bold drop-shadow">Blurry</span>
+</div>
+</div>
+<!-- Confidence Gauge & Environmental Sensor Stats -->
+<div class="col-span-3 flex flex-col justify-center gap-2">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Model Confidence</span>
+<span class="font-label-md text-label-md text-amber-800 font-bold">41.2%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2.5 rounded-full bg-surface-variant overflow-hidden">
+<div class="h-full bg-amber-500 rounded-full transition-all duration-500" style="width: 41.2%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-amber-700">wb_sunny</span>
+<span class="font-label-sm text-label-sm truncate">Harsh ambient glare detected</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-amber-700">motion_sensor_idle</span>
+<span class="font-label-sm text-label-sm truncate">Motion jitter index: 68/100</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Educational Section: Why AI couldn't confirm -->
+<div class="px-gutter mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">troubleshoot</span>
+<h2 class="font-title-md text-title-md text-on-surface">Why was AI unable to confirm?</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">3 field issues</span>
+</div>
+<!-- Diagnostic Failure Points List -->
+<div class="flex flex-col gap-2.5">
+<!-- Reason 1: Shadow -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-amber-800 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">brightness_medium</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Shadow cast across leaf center</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Shadowed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px] leading-5 mt-0.5">
+            Too dark to detect velvety apple scab spores (<em class="italic text-primary font-medium">Venturia inaequalis</em>).
+          </p>
+</div>
+</div>
+<!-- Reason 2: Multiple Leaves -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-amber-800 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">filter_center_focus</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Multiple leaves in frame</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Cluttered</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px] leading-5 mt-0.5">
+            AI could not isolate single symptom cluster. Please focus directly on one symptomatic leaf.
+          </p>
+</div>
+</div>
+<!-- Reason 3: Distance -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-amber-800 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">straighten</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Camera distance too far</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Distance</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px] leading-5 mt-0.5">
+            Optimal macro diagnosis requires a distance of 15–20 cm (about one hand-span).
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Field Golden Rule Micro-Tip Card -->
+<div class="px-gutter mt-space-md">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center gap-3 shadow-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">wb_twilight</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Field Pro-Tip</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-[13px] leading-4">
+          Angle your body to cast a soft shadow over the whole shoot, or snap during diffuse morning light.
+        </span>
+</div>
+</div>
+</div>
+<!-- Primary & Secondary Farmer Touch Targets -->
+<div class="px-gutter mt-space-lg flex flex-col gap-3">
+<!-- Primary CTA: Retake with Guide -->
+<button class="w-full min-h-[56px] rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all active:scale-[0.99] flex items-center justify-center gap-3 px-4" id="retake-photo-btn" type="button">
+<span class="material-symbols-outlined text-[24px]">camera_enhance</span>
+<span>Retake Photo with Field Guide</span>
+</button>
+<!-- Secondary CTA: Connect to KVK Agri Officer -->
+<div class="w-full p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">KVK District Agri Helpdesk</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Krishi Vigyan Kendra • Baramulla &amp; Shopian</p>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm bg-secondary-container text-on-secondary-container font-medium">Free</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<!-- Toll-free Call -->
+<a class="min-h-[50px] rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center justify-center gap-2 px-3 transition-colors active:scale-[0.98]" href="tel:18001801551">
+<span class="material-symbols-outlined text-[20px] text-primary">call</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm font-semibold leading-tight">1800-180-1551</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant leading-tight">Toll-Free Kisan Desk</span>
+</div>
+</a>
+<!-- Send Image via WhatsApp -->
+<button class="min-h-[50px] rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface flex items-center justify-center gap-2 px-3 transition-colors active:scale-[0.98]" id="whatsapp-share-btn" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">chat</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm font-semibold leading-tight">Share to KVK</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant leading-tight">Send via WhatsApp</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Tertiary Navigation -->
+<div class="pt-2 pb-1 flex justify-center">
+<button class="inline-flex items-center gap-1.5 py-2 px-4 rounded-full text-on-surface-variant hover:text-primary transition-colors text-label-md font-label-md" id="browse-library-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Browse Apple Disease Library instead</span>
+</button>
+</div>
+</div>
+<!-- Field Guideline Mini Bottom Drawer Preview -->
+<div class="px-gutter mt-space-sm">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary">tips_and_updates</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Need photo framing tips?</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">View 3 sample photos: Scab, Marssonina, Mites</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple haptic feedback micro-interaction for outdoor gloves & tactile reassurance
+  const triggerHaptic = () => {
+    if (navigator.vibrate) {
+      navigator.vibrate(35);
+    }
+  };
+
+  document.getElementById('retake-photo-btn')?.addEventListener('click', () => {
+    triggerHaptic();
+    // Signal app container to restart camera with active leaf contour stencil
+    window.location.hash = '#camera-viewfinder-retake';
+  });
+
+  document.getElementById('whatsapp-share-btn')?.addEventListener('click', () => {
+    triggerHaptic();
+    const shareText = encodeURIComponent("BaghBaan AI Field Advisory Request: Leaf Scan #BB-7829-KMR inconclusive. Need specialist input for potential early scab infection in Sopore orchard.");
+    window.open(`https://wa.me/9118001801551?text=${shareText}`, '_blank');
+  });
+
+  document.getElementById('browse-library-btn')?.addEventListener('click', () => {
+    triggerHaptic();
+    window.location.hash = '#library-apple-diseases';
+  });
+</script></main></body></html>

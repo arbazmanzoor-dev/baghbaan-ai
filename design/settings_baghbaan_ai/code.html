@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#30312e", "secondary-container": "#7bf8a1", "primary-fixed": "#bbefc1", "surface-variant": "#e4e2dd", "tertiary": "#7f0403", "background": "#fbf9f4", "on-tertiary": "#ffffff", "on-primary-fixed": "#00210b", "on-secondary-fixed-variant": "#005228", "surface-container-high": "#eae8e3", "on-tertiary-fixed": "#410000", "error": "#ba1a1a", "outline": "#717970", "outline-variant": "#c1c9be", "on-tertiary-fixed-variant": "#8e130c", "on-background": "#1b1c19", "primary-container": "#2f5d3a", "surface-container-highest": "#e4e2dd", "surface-container-lowest": "#ffffff", "on-surface-variant": "#414941", "on-error-container": "#93000a", "on-tertiary-container": "#ffb6ab", "on-primary-fixed-variant": "#22502e", "on-secondary-fixed": "#00210c", "tertiary-fixed": "#ffdad5", "surface-bright": "#fbf9f4", "secondary-fixed": "#7efba4", "primary": "#164525", "surface-tint": "#3a6844", "primary-fixed-dim": "#a0d3a7", "secondary-fixed-dim": "#61de8a", "on-primary": "#ffffff", "surface-container-low": "#f5f3ee", "secondary": "#006d37", "surface": "#fbf9f4", "error-container": "#ffdad6", "surface-dim": "#dbdad5", "tertiary-container": "#a12218", "inverse-on-surface": "#f2f1ec", "on-secondary-container": "#007239", "inverse-primary": "#a0d3a7", "on-error": "#ffffff", "on-surface": "#1b1c19", "tertiary-fixed-dim": "#ffb4a9", "on-secondary": "#ffffff", "surface-container": "#f0eee9", "on-primary-container": "#a1d4a8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "gutter": "1rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem" }, fontFamily: { "label-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-md": ["Inter"], "body-md-medium": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md-medium": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fbf9f4;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[28px]">eco</span><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Settings</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Change Language" class="min-h-[44px] px-space-sm py-space-xs rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button"><span class="text-primary font-semibold">EN</span><span class="mx-1 text-outline-variant">|</span><span>اردو</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl space-y-space-md">
+<!-- Farmer Profile & Orchard Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md">
+<div class="flex items-start gap-space-md">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a wise Kashmiri apple orchardist wearing traditional pheran and karakul cap, warm gentle eyes, lush misty apple trees in soft sunlight behind him in Kashmir valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPNMVkxHnVP-EQZvhFIFGX95V17BlNjJ1QAd2foui4VwBUua4FqxKCpUDXRH7yDpWn1nA-Z_lrNqFZCCoU4k9JyRNH3wOcPfU40PyrW_33aWv2nUDzGXne8wmkEAaSX3qcVCz2RgzXYrIz2yOrfXhgS6Vpl0GKj9UO9m4SRFyP1xtQZ6Yx28fFyoNTljLMq97235bD5bt7fzI0U0X-pNmVv14-WoWznMwjdhy2ZTQ"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full shadow-sm"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Ghulam Mohammad</span>
+</div>
+<p class="font-body-md-medium text-body-md-medium text-primary truncate">Sopore Orchard #12</p>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">landscape</span>
+<span class="font-label-sm text-label-sm truncate">14 Kanals (Red Delicious &amp; Kulu)</span>
+</div>
+</div>
+</div>
+<!-- Certification & KVK Tag -->
+<div class="mt-space-md bg-surface-container rounded-lg p-space-sm flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">
+        KVK Baramulla &amp; SKUAST Shalimar Registered Grower
+      </p>
+</div>
+<!-- Action CTA -->
+<button class="mt-space-md w-full min-h-[48px] rounded-lg bg-surface-container-high hover:bg-surface-variant active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs font-label-md text-label-md text-primary" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span>Edit Orchard Profile</span>
+</button>
+</div>
+<!-- App Preferences & Field Usability -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<h2 class="font-title-md text-title-md text-on-surface">Field Usability</h2>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-medium">Orchard Optimized</span>
+</div>
+<!-- Language Selector Row -->
+<button class="w-full text-left min-h-[56px] rounded-lg bg-surface-container-low hover:bg-surface-container p-space-sm flex items-center justify-between transition-colors" id="lang-btn" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Dialect &amp; Script</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Audio in Kashmiri • Text in Urdu &amp; English</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-primary bg-surface px-2.5 py-1 rounded-md shadow-sm">اردو / EN</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</button>
+<!-- Outdoor High-Contrast Mode -->
+<div class="min-h-[56px] rounded-lg bg-surface-container-low p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">wb_sunny</span>
+</div>
+<div class="flex-1 min-w-0 pr-2">
+<span class="font-label-md text-label-md text-on-surface block">Outdoor Sun Glare Mode</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-clamp-2">High contrast &amp; amplified weights for clear sunlight visibility</span>
+</div>
+</div>
+<button aria-checked="true" class="w-13 w-[52px] h-8 bg-primary rounded-full p-1 transition-colors relative flex-shrink-0 cursor-pointer" data-toggle="sunlight" role="switch" type="button">
+<div class="w-6 h-6 bg-surface rounded-full shadow-md transform translate-x-5 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+</div>
+</button>
+</div>
+<!-- Voice Audio Guidance -->
+<div class="min-h-[56px] rounded-lg bg-surface-container-low p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+</div>
+<div class="flex-1 min-w-0 pr-2">
+<span class="font-label-md text-label-md text-on-surface block">Voice Leaf Readout</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-clamp-2">Spoken diagnoses and spray advice in Kashmiri / Urdu</span>
+</div>
+</div>
+<button aria-checked="true" class="w-[52px] h-8 bg-primary rounded-full p-1 transition-colors relative flex-shrink-0 cursor-pointer" data-toggle="voice" role="switch" type="button">
+<div class="w-6 h-6 bg-surface rounded-full shadow-md transform translate-x-5 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">volume_up</span>
+</div>
+</button>
+</div>
+<!-- Dark Mode -->
+<div class="min-h-[56px] rounded-lg bg-surface-container-low p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">dark_mode</span>
+</div>
+<div class="flex-1 min-w-0 pr-2">
+<span class="font-label-md text-label-md text-on-surface block">Night Palette</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Follows phone twilight schedule</span>
+</div>
+</div>
+<button aria-checked="false" class="w-[52px] h-8 bg-surface-variant rounded-full p-1 transition-colors relative flex-shrink-0 cursor-pointer" data-toggle="darkmode" role="switch" type="button">
+<div class="w-6 h-6 bg-surface rounded-full shadow-md transform translate-x-0 transition-transform"></div>
+</button>
+</div>
+</div>
+<!-- Offline & Storage Management -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">offline_bolt</span>
+<h2 class="font-title-md text-title-md text-on-surface">Offline &amp; Neural Edge</h2>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        100% Ready
+      </span>
+</div>
+<!-- Neural Model Details -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">memory</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">v3.8 Edge Neural Net</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">On-device Scab &amp; Blight weights • 64 MB</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface px-2 py-0.5 rounded">Apr 2024</span>
+</div>
+<button class="w-full min-h-[44px] rounded-lg bg-primary-fixed hover:bg-primary-fixed-dim text-on-primary-fixed font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Check for Model Updates</span>
+</button>
+</div>
+<!-- Leaf Specimen Cache Metrics -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+<span class="font-label-sm text-label-sm font-semibold">Leaf Library</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">1,420</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Kashmir Reference Strains</p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center gap-1 text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">sd_card</span>
+<span class="font-label-sm text-label-sm font-semibold">Local Storage</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">18.4 MB</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">18 Diagnosis Scans</p>
+</div>
+</div>
+<!-- Clear Cache Action Button -->
+<button class="w-full min-h-[48px] rounded-lg bg-surface-container-high hover:bg-surface-variant active:scale-[0.99] transition-all flex items-center justify-between px-space-md text-on-surface font-label-md text-label-md" type="button">
+<span class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+<span>Clear Cached Scans (18.4 MB)</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Free Space</span>
+</button>
+</div>
+<!-- Extension & Field Support Contacts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center gap-space-xs pb-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">support_agent</span>
+<h2 class="font-title-md text-title-md text-on-surface">Extension &amp; Agronomists</h2>
+</div>
+<!-- Toll-Free Helpline Hot-card -->
+<a class="min-h-[56px] rounded-lg bg-primary text-on-primary p-space-md flex items-center justify-between shadow-sm active:opacity-95 transition-opacity" href="tel:18001801551">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-on-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[22px]">call</span>
+</div>
+<div>
+<span class="font-label-md text-label-md block">Kashmir Apple Grower Helpline</span>
+<span class="font-label-sm text-label-sm opacity-90">1800-180-1551 • Toll-Free (9 AM - 6 PM)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-primary text-[22px]">phone_in_talk</span>
+</a>
+<!-- University Directorate Link -->
+<div class="min-h-[52px] rounded-lg bg-surface-container-low p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">SKUAST-K Shalimar Directorate</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Agronomy Division &amp; Lab Testing</span>
+</div>
+</div>
+<button aria-label="Call SKUAST Shalimar" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+</button>
+</div>
+<!-- Report Specimen -->
+<div class="min-h-[52px] rounded-lg bg-surface-container-low p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">bug_report</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Unidentified Leaf Specimen?</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submit photo to Baramulla KVK Lab</span>
+</div>
+</div>
+<button aria-label="Submit specimen" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Share with Fellow Growers Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="relative rounded-xl overflow-hidden bg-primary-container text-on-primary p-space-md">
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px] text-secondary-container">groups</span>
+<span class="font-title-md text-title-md font-semibold">Grower Community</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container">
+          Help neighbors safeguard their orchards against early spring scab &amp; rust.
+        </p>
+<button class="mt-space-xs min-h-[56px] w-full rounded-lg bg-[#25D366] text-white flex items-center justify-center gap-space-sm font-label-lg text-label-lg shadow-sm hover:brightness-105 active:scale-[0.99] transition-all" type="button">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+<span>Share BaghBaan with Fellow Growers</span>
+</button>
+</div>
+</div>
+</div>
+<!-- About & Disclaimers -->
+<div class="space-y-space-sm px-space-xs pt-space-xs text-center">
+<div class="flex items-center justify-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">nature_people</span>
+<span class="font-label-md text-label-md">BaghBaan AI • Field Edition</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+      Version 2.4.1 (Build 184) • SKUAST Agri-Data Consortium
+    </p>
+<div class="flex items-center justify-center gap-space-md pt-space-xs">
+<button class="font-label-sm text-label-sm text-on-surface-variant underline hover:text-primary" type="button">
+        Terms of Use
+      </button>
+<span class="text-outline-variant">•</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant underline hover:text-primary" type="button">
+        Agro-Chemical Disclaimer
+      </button>
+<span class="text-outline-variant">•</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant underline hover:text-primary" type="button">
+        Privacy &amp; GPS
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Simple Micro-interaction Toggles for Settings
+  document.querySelectorAll('[data-toggle]').forEach(button => {
+    button.addEventListener('click', () => {
+      const isChecked = button.getAttribute('aria-checked') === 'true';
+      const thumb = button.firstElementChild;
+      
+      if (isChecked) {
+        button.setAttribute('aria-checked', 'false');
+        button.classList.remove('bg-primary');
+        button.classList.add('bg-surface-variant');
+        if (thumb) {
+          thumb.classList.remove('translate-x-5');
+          thumb.classList.add('translate-x-0');
+        }
+      } else {
+        button.setAttribute('aria-checked', 'true');
+        button.classList.remove('bg-surface-variant');
+        button.classList.add('bg-primary');
+        if (thumb) {
+          thumb.classList.remove('translate-x-0');
+          thumb.classList.add('translate-x-5');
+        }
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(26,46,32,0.06)]" data-active-classes="text-primary font-body-md-medium"><div class="h-[68px] px-gutter-mobile flex items-center justify-around relative"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="history" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm mt-0.5">History</span></a><div class="flex flex-col items-center justify-center -mt-6"><a aria-label="Scan Leaf" class="w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-lg shadow-primary-container/30 flex items-center justify-center active:scale-95 transition-transform ring-4 ring-surface" data-path="scan-leaf" href="#"><span class="material-symbols-outlined text-[30px]">photo_camera</span></a><span class="font-label-sm text-label-sm text-on-surface font-medium mt-1">Scan Leaf</span></div><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="library" href="#"><span class="material-symbols-outlined text-[24px]">local_library</span><span class="font-label-sm text-label-sm mt-0.5">Library</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] transition-colors text-primary font-body-md-medium" data-path="settings" href="#"><span class="material-symbols-outlined text-[24px]">settings</span><span class="font-label-sm text-label-sm mt-0.5">Settings</span></a></div></nav></body></html>

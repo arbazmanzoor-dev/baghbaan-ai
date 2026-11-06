@@ -1,0 +1,39 @@
+[project]
+name = "baghbaan-backend"
+version = "0.1.0"
+description = "BaghBaan AI — FastAPI inference API for apple leaf disease detection"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi==0.162.0",
+  "uvicorn[standard]==0.54.0",
+  "pydantic==2.14.2",
+  "pydantic-settings==2.16.2",
+  "python-multipart==0.0.33",
+  "pillow==13.0.0",
+  "tensorflow==2.21.0",
+  "slowapi==0.1.10",
+  "sqlalchemy==2.1.6",
+  "bcrypt==5.0.0",
+  "pyjwt==2.15.1",
+]
+
+[dependency-groups]
+dev = [
+  "ruff==0.17.3",
+  "pytest==9.2.0",
+  "httpx2==2.16.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+extend = "../ruff.toml"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+  # Raised inside Keras' TF backend (tensor __array__ predates NumPy 2's copy=); not our code.
+  "ignore:__array__ implementation doesn't accept a copy keyword:DeprecationWarning",
+]

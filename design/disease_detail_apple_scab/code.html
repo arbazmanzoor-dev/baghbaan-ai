@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#30312e", "secondary-container": "#7bf8a1", "primary-fixed": "#bbefc1", "surface-variant": "#e4e2dd", "tertiary": "#7f0403", "background": "#fbf9f4", "on-tertiary": "#ffffff", "on-primary-fixed": "#00210b", "on-secondary-fixed-variant": "#005228", "surface-container-high": "#eae8e3", "on-tertiary-fixed": "#410000", "error": "#ba1a1a", "outline": "#717970", "outline-variant": "#c1c9be", "on-tertiary-fixed-variant": "#8e130c", "on-background": "#1b1c19", "primary-container": "#2f5d3a", "surface-container-highest": "#e4e2dd", "surface-container-lowest": "#ffffff", "on-surface-variant": "#414941", "on-error-container": "#93000a", "on-tertiary-container": "#ffb6ab", "on-primary-fixed-variant": "#22502e", "on-secondary-fixed": "#00210c", "tertiary-fixed": "#ffdad5", "surface-bright": "#fbf9f4", "secondary-fixed": "#7efba4", "primary": "#164525", "surface-tint": "#3a6844", "primary-fixed-dim": "#a0d3a7", "secondary-fixed-dim": "#61de8a", "on-primary": "#ffffff", "surface-container-low": "#f5f3ee", "secondary": "#006d37", "surface": "#fbf9f4", "error-container": "#ffdad6", "surface-dim": "#dbdad5", "tertiary-container": "#a12218", "inverse-on-surface": "#f2f1ec", "on-secondary-container": "#007239", "inverse-primary": "#a0d3a7", "on-error": "#ffffff", "on-surface": "#1b1c19", "tertiary-fixed-dim": "#ffb4a9", "on-secondary": "#ffffff", "surface-container": "#f0eee9", "on-primary-container": "#a1d4a8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "gutter": "1rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem" }, fontFamily: { "label-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-md": ["Inter"], "body-md-medium": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md-medium": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fbf9f4;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-12 h-12 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Disease Detail</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Bookmark or Share" class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">bookmark</span></button><button aria-label="Share" class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Top Visual Gallery / Pathology Specimen -->
+<div class="relative w-full overflow-hidden bg-surface-container-high rounded-b-[2rem] shadow-md">
+<div class="relative h-72 w-full">
+<img class="w-full h-full object-cover" data-alt="Close-up macro photography of fresh apple leaf in Kashmir orchard exhibiting circular velvety olive-green fungal apple scab lesions (Venturia inaequalis), surrounded by dew droplets, cinematic soft morning sun illuminating leaf venation, agricultural field documentary style, deep organic emerald greens and earthy textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzoa0Ne9mLL-SWdZhD2QrNnZeCxYaBlRunuZN3FbhiY8bFuY1CQiBjn4L5m0LM1Utv4V9j2BLTghR2mNCR6oRm9S7u-4apSJP-_R8nOA6RvgdBTRfylBXdleoZFVHQN4zTzdRu2A1iZT0k-8u0x5pklLiBSw87nwrPNLHHZDwD2byRnFy_bsZnG3RY-zo31QOORj5GyzczzzmtDVK8AsVIbUY4iZalTgE6Ybj7qcs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<!-- Threat & Severity Pill Overlay -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary-container text-on-tertiary font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+          High Threat • Pre-Harvest Hazard
+        </span>
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface/90 text-on-surface font-label-sm text-label-sm shadow-sm backdrop-blur-md">
+          ID: SCAB-01
+        </span>
+</div>
+<!-- Title & Audio Pronunciation Overlay -->
+<div class="absolute bottom-4 left-4 right-4 flex flex-col gap-2">
+<div class="flex items-end justify-between gap-3">
+<div class="min-w-0">
+<div class="flex items-baseline gap-2">
+<h2 class="font-headline-lg text-headline-lg text-surface tracking-tight">Apple Scab</h2>
+<span class="font-headline-sm text-headline-sm text-surface-variant font-normal dir-rtl" dir="rtl">(سیب کی خارش)</span>
+</div>
+<p class="font-label-sm text-label-sm italic text-surface-variant/90 tracking-wide mt-0.5">
+              Venturia inaequalis • Ascomycete
+            </p>
+</div>
+<!-- Audio Pronunciation Button -->
+<button aria-label="Listen in Kashmiri and Urdu" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary text-on-primary shadow-lg hover:bg-primary-container active:scale-95 transition-all shrink-0" id="audioGuideBtn" onclick="toggleAudioGuide()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="audioIcon">volume_up</span>
+<span class="font-label-sm text-label-sm font-medium" dir="rtl">سنیں - کشمیری/اردو</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro Audio Player Toast (Revealed via JS) -->
+<div class="hidden px-4 py-2.5 bg-primary text-on-primary flex items-center justify-between transition-all" id="audioToast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] animate-pulse">graphic_eq</span>
+<span class="font-label-sm text-label-sm">چل رہا ہے: صوتی رہنما برائے پھپھوندی علامات (0:48)</span>
+</div>
+<button class="text-on-primary/80 hover:text-on-primary" onclick="toggleAudioGuide()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-md mt-4">
+<!-- Quick Farmer Summary Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]">energy_savings_leaf</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">خلاصہ برائے باغبان • Orchard Alert</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Most devastating fungal epidemic in the Kashmir valley. Directly attacks young leaves and developing calyx during wet spring (March–May), causing premature defoliation and severe unmarketable russeted scabs.
+          </p>
+</div>
+</div>
+</div>
+<!-- Segmented Navigation Chips -->
+<div class="flex gap-2 overflow-x-auto pb-1 scrollbar-none -mx-margin px-margin pt-1" id="sectionTabs">
+<button class="tab-btn px-4 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm shrink-0 flex items-center gap-1.5 transition-all" onclick="scrollToSection('symptoms-section', this)">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+        Symptoms
+      </button>
+<button class="tab-btn px-4 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all" onclick="scrollToSection('weather-section', this)">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+        Spike Weather
+      </button>
+<button class="tab-btn px-4 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all" onclick="scrollToSection('spray-section', this)">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+        SKUAST-K Schedule
+      </button>
+<button class="tab-btn px-4 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all" onclick="scrollToSection('sanitation-section', this)">
+<span class="material-symbols-outlined text-[18px]">recycling</span>
+        Sanitation
+      </button>
+<button class="tab-btn px-4 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md shrink-0 flex items-center gap-1.5 transition-all" onclick="scrollToSection('helpline-section', this)">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+        Helpline
+      </button>
+</div>
+<!-- Section 1: Visual Symptoms by Season -->
+<div class="flex flex-col gap-3" id="symptoms-section">
+<div class="flex items-center justify-between pt-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">yard</span>
+          Visual Progression by Season
+        </h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Stages</span>
+</div>
+<!-- Spring Stage -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex gap-3.5 items-start">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Early spring apple tree tender leaf with pale olive green circular velvety spots, wet morning condensation, high-resolution botanical diagnosis macro view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcNYOlnP9tRcyHHTVrqznGea0H4321vYQe0nOM_0hi2rtsq4iiv23OgRNzFhVhW-kd47EctfFD4IXVeTuulceBeFC3O2dFrhOYkqUPDqgk2Dl6vg7Ex6moGpwQxJG7l1cmbwqI8_2PpAnqIKE3C2gTGx0NnZ7d2N57z_mTHRGjx8KoBOe-iqRVd9-ga_PIRro_9sBDYOAN4VDQ15rDhPapeLkO26KbvLo1jXW8vAk"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-[10px]">
+            Mar-Apr
+          </span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Primary Stage</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface truncate">Spring Foliage Outbreak</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">
+            Velvety olive-brown circular spots on the upper leaf blade with slight curling, blistering, and puckering along leaf margins.
+          </p>
+</div>
+</div>
+<!-- Mid Summer Stage -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex gap-3.5 items-start">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Mid summer apple leaf turning necrotic yellow with dark gray and black hardened fungal lesions falling off tree branch, natural Kashmir garden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArWwvpY42NZ4xRwq6u7u72zVO7SvQ1HvLBjrtxSnCt6T3FAiaOrso8Bb_2KAzn73US9MsDAVSd4CoiHZ3slnVquSoQllIQmEza05ssjNOah2rbijTQYzrMSEQanY3BYi_POgk5QWaU62nVOREzjaycqfTGlPOcEUvcorMXu6J-UqpWZHCLti6-MLhJ-InLJfZIjVnRxD1zmmpH7gR7WZvCRa3WyHW-8WmyPcwQPpo"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-[10px]">
+            May-Jul
+          </span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Secondary Infection</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface truncate">Summer Necrosis &amp; Drop</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">
+            Dark, thickened, and hardened raised crusts. Foliage chlorosis (yellowing) causes catastrophic early defoliation, starving fruit buds.
+          </p>
+</div>
+</div>
+<!-- Fruit Impact Stage -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex gap-3.5 items-start">
+<div class="w-20 h-20 rounded-xl overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Immature green Kashmiri Delicious apple fruit with large corky brown scab cracks, distorted fruit shape, unmarketable grade agricultural close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMgSyvP9DH7ob6GCHM5y4IwjSCfZa2CIQPL8Yt4l59cCKlS_pMzIyGTppt7fCHiAYz0hhXTMopf3ViMvSkY0O6ccuSCdGFdPxx9wVEJZZy79G0zGirb4jomV4R1_nJUJ2LvTOKwC76LBv_cM8MkXB0IFaQw73iMEkTVwZndqSFfZmBh-LVPjJ9rwYGRSxt2FM9ARkOwoyLjy3k0_9czGZJrtpJeS7LT2kWz6QgFmA"/>
+<span class="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-[10px]">
+            Jul-Aug
+          </span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">Grade Loss: 80%</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface truncate">Fruit Russet &amp; Distortion</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">
+            Corky, fissured black scabs. Developing fruit becomes misshapen, cracks open, and allows secondary secondary rot pathogens to enter.
+          </p>
+</div>
+</div>
+</div>
+<!-- Section 2: Pathogen Life Cycle & Mills Weather Spikes -->
+<div class="flex flex-col gap-3 pt-2" id="weather-section">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">cyclone</span>
+        Pathogen Cycle &amp; Weather Triggers
+      </h3>
+<!-- Environmental Risk Box -->
+<div class="bg-surface-container-high rounded-2xl p-4 flex flex-col gap-3 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">thermostat</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Mills Infection Curve Risk</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Active spore discharge formula</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">High Warning</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-3.5 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-[28px] shrink-0">rainy</span>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+            Critical risk occurs when <strong class="font-semibold text-tertiary">leaf wetness exceeds 9 continuous hours</strong> at ambient temperatures between <strong class="font-semibold text-on-surface">15°C–24°C</strong> following rainfall.
+          </p>
+</div>
+<!-- Overwintering Origin Info -->
+<div class="flex items-start gap-2.5 px-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">park</span>
+<p class="font-body-md text-body-md leading-relaxed">
+<strong>Overwintering Source:</strong> Pseudothecia fungi hibernate primarily within fallen dead leaves on the orchard floor, discharging ascospores during bud break.
+          </p>
+</div>
+</div>
+</div>
+<!-- Section 3: SKUAST-K Spray Schedule -->
+<div class="flex flex-col gap-3 pt-2" id="spray-section">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">vaccines</span>
+          SKUAST-K Spray Schedule
+        </h3>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Official SOP</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant -mt-1">
+        Strict prophylactic timeline endorsed by Sher-e-Kashmir University of Agricultural Sciences.
+      </p>
+<!-- Spray Timeline Steps -->
+<div class="flex flex-col gap-3">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-md text-title-md shrink-0">
+            1
+          </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-title-md text-title-md text-on-surface">Silver Tip / Green Tip</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Stage I</span>
+</div>
+<p class="font-label-sm text-label-sm text-primary font-medium mb-1">Timing: Early March</p>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-on-surface flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-primary-container">Mancozeb 75 WP (0.3%) <span class="font-normal text-on-surface-variant">or</span> Captan 50 WP (0.3%)</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Creates protective surface barrier across nascent bud scales.</p>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-title-md text-title-md shrink-0">
+            2
+          </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-title-md text-title-md text-on-surface">Pink Bud Stage</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm">Crucial Window</span>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary font-medium mb-1">Timing: Prior to Blossom Opening</p>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-on-surface flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-primary-container">Dodine 65 WP (0.075%) <span class="font-normal text-on-surface-variant">or</span> Difenoconazole 25 EC (0.03%)</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Curative translaminar penetration to knock out spore germination.</p>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-title-md text-title-md shrink-0">
+            3
+          </div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-0.5">
+<span class="font-title-md text-title-md text-on-surface">Petal Fall (Fruit Set)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Stage III</span>
+</div>
+<p class="font-label-sm text-label-sm text-primary font-medium mb-1">Timing: 70–80% Petal Drop</p>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-on-surface flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-primary-container">Systemic Fungicide (Myclobutanil 10 WP)</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Apply strictly within 48 hours of rain spells to prevent calyx infection.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Organic & Orchard Sanitation -->
+<div class="flex flex-col gap-3 pt-2" id="sanitation-section">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">compost</span>
+        Sanitation &amp; Non-Chemical Measures
+      </h3>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Leaf Litter Urea Treatment -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">shower</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Autumn 5% Urea Spray</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 leading-snug">
+              Spray 50g urea per liter of water on foliage just before leaf fall or onto fallen leaf litter. Accelerates microbial breakdown of leaf matter, destroying 85%+ overwintering fungal ascospores before snowfall.
+            </p>
+</div>
+</div>
+<!-- Canopy Pruning -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">content_cut</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">Canopy Aeration &amp; Thinning</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 leading-snug">
+              Annual pruning to ensure maximum air flow and direct sunlight through inner scaffolding branches, keeping leaf wetness time below the 9-hour critical threshold.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5: Expert Help & Emergency Extension Contacts -->
+<div class="flex flex-col gap-3 pt-2 mb-4" id="helpline-section">
+<div class="bg-surface-container-high rounded-2xl p-4 flex flex-col gap-3.5 shadow-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+<h3 class="font-title-md text-title-md font-semibold">Field Warning &amp; Resistance Prevention</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+          Avoid consecutive sprays of single-site systemic fungicides (e.g., Strobilurins or DMI). Repeated usage triggers resistant scab strains across the orchard district.
+        </p>
+<!-- Helpline Callout Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Horticulture Extension Officer</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Districts: Baramulla • Shopian • Sopore</p>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Toll Free</span>
+</div>
+<a class="h-12 w-full rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container active:scale-[0.99] transition-all" href="tel:18001801551">
+<span class="material-symbols-outlined text-[22px]">phone_in_talk</span>
+<span>Call Officer: 1800-180-1551</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Sticky Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl px-margin py-3 pb-safe shadow-[0_-4px_20px_rgba(22,69,37,0.08)]">
+<div class="max-w-lg mx-auto flex items-center gap-3">
+<!-- Primary Action: Camera Specimen Scan -->
+<button class="flex-1 h-14 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2.5 shadow-md active:bg-primary-container transition-all" onclick="triggerDiagnosisScan()" type="button">
+<span class="material-symbols-outlined text-[24px]">photo_camera</span>
+<span>Scan Specimen for Scab</span>
+</button>
+<!-- Secondary Action: WhatsApp Advisory Share -->
+<button aria-label="Share advisory on WhatsApp" class="h-14 w-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-sm active:scale-95 transition-all" onclick="shareToWhatsApp()" title="Share Advisory via WhatsApp" type="button">
+<span class="material-symbols-outlined text-[26px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let isPlayingAudio = false;
+
+  function toggleAudioGuide() {
+    isPlayingAudio = !isPlayingAudio;
+    const toast = document.getElementById('audioToast');
+    const icon = document.getElementById('audioIcon');
+    
+    if (isPlayingAudio) {
+      toast.classList.remove('hidden');
+      icon.innerText = 'pause_circle';
+    } else {
+      toast.classList.add('hidden');
+      icon.innerText = 'volume_up';
+    }
+  }
+
+  function scrollToSection(sectionId, clickedTab) {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    
+    // Update tab visual styles
+    const tabs = document.querySelectorAll('.tab-btn');
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      tab.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    
+    clickedTab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    clickedTab.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+  }
+
+  function triggerDiagnosisScan() {
+    // Provide tactile haptic feedback where supported
+    if (navigator.vibrate) {
+      navigator.vibrate([40]);
+    }
+    // Deep-link or trigger camera scanner workflow
+    window.location.hash = '#camera-scan-scab';
+  }
+
+  function shareToWhatsApp() {
+    const advisoryText = encodeURIComponent(
+      "باغبان الرٹ: سیب کی خارش (Apple Scab) گائیڈ لائنز از SKUAST-K۔ بارش کے بعد نو گھنٹے پتوں پر نمی انفیکشن پیدا کرتی ہے۔ فوری اسپرے شیڈول اور رہنمائی چیک کریں: BaghBaan AI"
+    );
+    window.open(`https://wa.me/?text=${advisoryText}`, '_blank');
+  }
+</script></main></body></html>

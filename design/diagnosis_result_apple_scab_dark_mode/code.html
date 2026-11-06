@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ur"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Nastaliq+Urdu:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-container": "#a1d4a8", "on-tertiary-fixed-variant": "#8e130c", "inverse-on-surface": "#f2f1ec", "on-secondary-fixed": "#00210c", "surface-container-highest": "#e4e2dd", "surface-bright": "#fbf9f4", "error": "#ba1a1a", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#005228", "on-primary": "#ffffff", "tertiary-fixed-dim": "#ffb4a9", "tertiary-fixed": "#ffdad5", "secondary": "#006d37", "primary-fixed-dim": "#a0d3a7", "on-primary-fixed-variant": "#22502e", "tertiary": "#7f0403", "tertiary-container": "#a12218", "surface-container-high": "#eae8e3", "background": "#fbf9f4", "secondary-container": "#7bf8a1", "surface-variant": "#e4e2dd", "on-secondary": "#ffffff", "primary-fixed": "#bbefc1", "on-error": "#ffffff", "primary-container": "#2f5d3a", "primary": "#164525", "on-tertiary-container": "#ffb6ab", "surface": "#fbf9f4", "on-secondary-container": "#007239", "surface-container-lowest": "#ffffff", "secondary-fixed": "#7efba4", "surface-container": "#f0eee9", "error-container": "#ffdad6", "on-background": "#1b1c19", "on-tertiary": "#ffffff", "on-primary-fixed": "#00210b", "secondary-fixed-dim": "#61de8a", "outline-variant": "#c1c9be", "on-tertiary-fixed": "#410000", "inverse-primary": "#a0d3a7", "surface-dim": "#dbdad5", "on-surface-variant": "#414941", "outline": "#717970", "surface-tint": "#3a6844", "inverse-surface": "#30312e", "surface-container-low": "#f5f3ee", "on-surface": "#1b1c19" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "body-md-medium": ["Inter"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"] }, fontSize: { "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "26px", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "body-md-medium": ["16px", { lineHeight: "24px", fontWeight: "500" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "label-lg": ["16px", { lineHeight: "22px", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "26px", fontWeight: "600" }], "title-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(22,69,37,0.06)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="پیچھے جائیں" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px] rotate-180">arrow_back_ios_new</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Diagnosis Result</h1></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full pt-16 min-h-screen bg-surface px-margin pb-safe"><div class="flex flex-col w-full pb-28">
+<!-- Top Meta Status Strip -->
+<div class="flex items-center justify-between gap-space-sm pt-space-xs pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1E2621] text-[#A1D4A8] font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#34D399] animate-pulse"></span>
+        SCAN #BB-8492
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#1E2621] text-[#9CA3AF] font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-[#A1D4A8]">offline_pin</span>
+        Edge v2.4 • Offline
+      </span>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="محفوظ کریں" class="w-10 h-10 rounded-full flex items-center justify-center bg-[#1E2621] text-[#F9FAFB] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<button aria-label="شیئر کریں" class="w-10 h-10 rounded-full flex items-center justify-center bg-[#1E2621] text-[#F9FAFB] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Primary Disease Detection Banner -->
+<div class="rounded-xl p-space-md bg-[#251616] text-[#FFFFFF] shadow-lg relative overflow-hidden mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#7F0403] text-[#FFDAD5] font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+        مرض کی تصدیق • Disease Detected
+      </span>
+<span class="text-[#F87171] font-label-sm text-label-sm tracking-wide">شدید خطرہ / High Risk</span>
+</div>
+<div class="flex flex-col mt-space-xs">
+<div class="flex items-baseline justify-between gap-2">
+<h2 class="font-headline-lg text-headline-lg text-[#F9FAFB] tracking-tight">Apple Scab</h2>
+<span class="font-headline-sm text-headline-sm text-[#FFB4A9] font-semibold text-right" dir="rtl">سیب کی خارش</span>
+</div>
+<p class="font-body-md text-body-md text-[#9CA3AF] italic mt-0.5">Venturia inaequalis • Ascomycete fungal pathogen</p>
+</div>
+<!-- Diagnostic Confidence Box -->
+<div class="mt-space-md pt-space-sm bg-[#181111]/80 rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[#9CA3AF]">AI تشخیصی یقین</span>
+<span class="font-display-lg text-display-lg text-[#F87171] font-bold tracking-tight">94.2%</span>
+</div>
+</div>
+<div class="flex flex-col items-end text-right">
+<span class="inline-flex items-center gap-1 text-[#34D399] font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          کشمیر فیلڈ ڈیٹا تصدیق
+        </span>
+<span class="text-[#9CA3AF] font-label-sm text-label-sm">18,400+ SKUAST سیمپلز</span>
+</div>
+</div>
+</div>
+<!-- Heatmap & Leaf Inspection Interactive Card -->
+<div class="rounded-xl bg-[#1E2621] p-space-md text-[#F9FAFB] shadow-md mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[#34D399] text-[20px]">biotech</span>
+<h3 class="font-title-md text-title-md text-[#F9FAFB]">بصری تجزیہ / Visual Scan</h3>
+</div>
+<!-- Mode Toggle Switch -->
+<div class="inline-flex rounded-full bg-[#121614] p-0.5">
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-[#9CA3AF] transition-colors" id="toggle-photo-btn" onclick="toggleView('photo')">
+          تصویر
+        </button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-[#25312A] text-[#34D399] transition-colors flex items-center gap-1" id="toggle-heatmap-btn" onclick="toggleView('heatmap')">
+<span class="w-1.5 h-1.5 rounded-full bg-[#34D399]"></span>
+          ہیٹ میپ
+        </button>
+</div>
+</div>
+<!-- Image Viewport with Spectral Overlay -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-[#121614] shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up macro view of an infected Kashmiri apple tree leaf under overcast dusk ambient light, exhibiting dark olive-green velvety fungal lesions, scab spots, and chlorotic patches across the leaf blade against a deep dark background" id="leaf-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_pqxiBSTb93y6tsnRsdEMFUlTnDbis0UkIKSg1DRTvUcwzJc9oKmcvpFW5aX5XKAB6ATC5G5OsyOSPLc5qDc0Iitmsr2Yc67I4pXChfP0gUgmc28YGTyipVv5tcl3RgGoa44mvtmYjrnkQnQ41eK37GaXeYD9gbDvmiXHgdx7pg1kfZ1YynlyLYZxQCOKvHvgZ1945XnPTkE-xfGH-ln6zQDI_0vnCeQN6D1h1kk"/>
+<!-- AI Heatmap Overlay Layer -->
+<div class="absolute inset-0 bg-gradient-to-tr from-transparent via-[#F87171]/20 to-[#BA1A1A]/35 pointer-events-none flex items-center justify-center" id="heatmap-overlay">
+<!-- Lesion Cluster Hotspots -->
+<div class="absolute top-1/4 right-1/3 w-16 h-16 rounded-full bg-[#EF4444]/40 blur-md animate-pulse"></div>
+<div class="absolute top-1/3 right-1/4 w-10 h-10 rounded-full bg-[#FBBF24]/50 blur-sm"></div>
+<div class="absolute bottom-1/3 left-1/4 w-20 h-20 rounded-full bg-[#EF4444]/45 blur-lg"></div>
+<div class="absolute top-3 left-3 bg-[#121614]/85 px-2.5 py-1 rounded-md backdrop-blur-md flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#EF4444]"></span>
+<span class="font-label-sm text-label-sm text-[#F9FAFB]">فنگل انفیکشن کلسٹر: 3 مقامات</span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-[#9CA3AF] font-label-sm text-label-sm">
+<span>مقام: شوپیاں آرچرڈ بلاک B</span>
+<span>کیمرہ ریزولوشن: 48 MP Macro</span>
+</div>
+</div>
+<!-- Multi-Class Differential Matrix -->
+<div class="rounded-xl bg-[#1E2621] p-space-md text-[#F9FAFB] shadow-md mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-title-md text-title-md text-[#F9FAFB]">تشخیصی امکانات (Differential Matrix)</h3>
+<span class="text-[#9CA3AF] font-label-sm text-label-sm">AI احتمالی درجہ بندی</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Item 1: Primary Target -->
+<div class="p-space-sm rounded-lg bg-[#25312A]">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#F87171]"></span>
+<span class="font-label-md text-label-md text-[#F9FAFB]">سیب کی خارش (Apple Scab)</span>
+</div>
+<span class="font-label-md text-label-md text-[#F87171] font-bold">94.2%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-[#121614] overflow-hidden">
+<div class="h-full bg-gradient-to-r from-[#BA1A1A] to-[#F87171] rounded-full" style="width: 94.2%;"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-lg bg-[#181E1A]">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#D97706]"></span>
+<span class="font-label-md text-label-md text-[#E4E2DD]">دیودار سیب کا زنگ (Cedar Apple Rust)</span>
+</div>
+<span class="font-label-md text-label-md text-[#9CA3AF]">3.1%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-[#121614] overflow-hidden">
+<div class="h-full bg-[#D97706] rounded-full" style="width: 3.1%;"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-lg bg-[#181E1A]">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#717970]"></span>
+<span class="font-label-md text-label-md text-[#E4E2DD]">کالا سڑن (Black Rot)</span>
+</div>
+<span class="font-label-md text-label-md text-[#9CA3AF]">1.8%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-[#121614] overflow-hidden">
+<div class="h-full bg-[#717970] rounded-full" style="width: 1.8%;"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-sm rounded-lg bg-[#181E1A]">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#34D399]"></span>
+<span class="font-label-md text-label-md text-[#E4E2DD]">صحت مند خلیات (Healthy Tissue)</span>
+</div>
+<span class="font-label-md text-label-md text-[#9CA3AF]">0.9%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-[#121614] overflow-hidden">
+<div class="h-full bg-[#34D399] rounded-full" style="width: 0.9%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- SKUAST Critical Agronomic Advisory Alert -->
+<div class="rounded-xl bg-[#281E0F] p-space-md text-[#F9FAFB] shadow-md mb-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-[#D97706]/20 flex items-center justify-center shrink-0 text-[#FBBF24]">
+<span class="material-symbols-outlined text-[22px]">contact_phone</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-title-md text-title-md text-[#FBBF24]">ہنگامی مشورہ برائے باغبان</span>
+</div>
+<p class="font-body-md text-body-md text-[#E4E2DD] leading-relaxed">
+          مہنگی ادویات کے ٹینک مکسچر چھڑکنے سے پہلے SKUAST-K یا مقامی ہارٹیکلچر افسر سے تصدیق لازمی کریں۔
+        </p>
+<div class="mt-space-sm flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#D97706] text-[#FFFFFF] font-label-md text-label-md shadow-sm active:bg-[#B45309]" href="tel:18001801551">
+<span class="material-symbols-outlined text-[16px]">call</span>
+            ٹول فری: 1800-180-1551
+          </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Structured Clinical Agronomy Cards -->
+<div class="space-y-space-md mb-space-lg">
+<!-- Card A: Disease Biology -->
+<div class="rounded-xl bg-[#1E2621] p-space-md text-[#F9FAFB] shadow-md">
+<div class="flex items-center gap-space-xs mb-space-xs text-[#34D399]">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+<h4 class="font-title-md text-title-md text-[#F9FAFB]">سیب کی خارش کیا ہے؟ (What is Apple Scab?)</h4>
+</div>
+<p class="font-body-md text-body-md text-[#9CA3AF] leading-relaxed">
+        یہ فنگس پتوں پر اسکوپورس (ascospores) کے ذریعے پھیلتی ہے۔ وادی کشمیر میں مسلسل 9 گھنٹے پتے گیلے رہنے اور 15 تا 20 ڈگری درجہ حرارت کی صورت میں فنگس تیزی سے فعال ہو جاتی ہے۔
+      </p>
+<div class="mt-space-sm p-space-sm rounded-lg bg-[#181E1A] flex items-center justify-between text-[#9CA3AF] font-label-sm text-label-sm">
+<span>خطرے کا سبب: شبنم / 9 گھنٹے نمی</span>
+<span class="text-[#FBBF24]">درجہ حرارت: 16°C (شب کے وقت)</span>
+</div>
+</div>
+<!-- Card B: Observed Symptoms -->
+<div class="rounded-xl bg-[#1E2621] p-space-md text-[#F9FAFB] shadow-md">
+<div class="flex items-center gap-space-xs mb-space-xs text-[#34D399]">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<h4 class="font-title-md text-title-md text-[#F9FAFB]">مشاہدہ شدہ علامات (Observed Symptoms)</h4>
+</div>
+<ul class="space-y-2 text-[#9CA3AF] font-body-md text-body-md">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#F87171] text-[18px] shrink-0 mt-0.5">adjust</span>
+<span>پتوں کی سطح پر زیتونی بھورے رنگ کے مخملی دھبے (Olive-brown fungal spots)۔</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#F87171] text-[18px] shrink-0 mt-0.5">adjust</span>
+<span>کلوروسس (Chlorosis) اور پتوں کے کناروں کا غیر معمولی مڑنا۔</span>
+</li>
+</ul>
+</div>
+<!-- Card C: SKUAST-K Action Protocol -->
+<div class="rounded-xl bg-[#1E2621] p-space-md text-[#F9FAFB] shadow-md">
+<div class="flex items-center gap-space-xs mb-space-xs text-[#34D399]">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+<h4 class="font-title-md text-title-md text-[#F9FAFB]">SKUAST-K فوری ایکشن پلان (Protocol)</h4>
+</div>
+<div class="space-y-space-sm mt-space-sm">
+<div class="p-space-sm rounded-lg bg-[#25312A] flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#34D399] text-[20px] shrink-0 mt-0.5">science</span>
+<div>
+<span class="font-label-md text-label-md text-[#F9FAFB] block">سفارش کردہ فنگس کش سپرے (Mancozeb 75 WP)</span>
+<span class="font-body-md text-body-md text-[#9CA3AF]">سلور ٹپ اور پتے کھلنے کے مرحلے پر 300 گرام فی 100 لیٹر پانی میں ملائیں۔</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-[#25312A] flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#34D399] text-[20px] shrink-0 mt-0.5">science</span>
+<div>
+<span class="font-label-md text-label-md text-[#F9FAFB] block">متبادل حل: کیپٹان (Captan 50 WP)</span>
+<span class="font-body-md text-body-md text-[#9CA3AF]">بارش کے امکان کی صورت میں حفاظتی حفاظتی ڈھال کے طور پر اسپرے کریں۔</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Quick Actions Tray -->
+<div class="fixed bottom-0 inset-x-0 bg-[#121614]/95 backdrop-blur-xl px-margin py-space-sm flex flex-col gap-space-xs shadow-2xl z-40">
+<button class="w-full h-14 rounded-xl bg-[#2F5D3A] text-[#FFFFFF] font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-lg active:bg-[#23472C] transition-all">
+<span class="material-symbols-outlined text-[24px]">photo_camera</span>
+<span>مزید پتوں کا معائنہ کریں (Scan Another)</span>
+</button>
+<button class="w-full h-12 rounded-xl bg-[#1E2621] text-[#A1D4A8] font-label-md text-label-md flex items-center justify-center gap-space-xs active:bg-[#25312A] transition-colors">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>رپورٹ ہارٹیکلچر افسر کو بھیجیں</span>
+</button>
+</div>
+</div>
+<script>
+  function toggleView(mode) {
+    const overlay = document.getElementById('heatmap-overlay');
+    const photoBtn = document.getElementById('toggle-photo-btn');
+    const heatmapBtn = document.getElementById('toggle-heatmap-btn');
+
+    if (mode === 'photo') {
+      overlay.classList.add('hidden');
+      photoBtn.classList.remove('text-[#9CA3AF]');
+      photoBtn.classList.add('bg-[#25312A]', 'text-[#F9FAFB]');
+      heatmapBtn.classList.remove('bg-[#25312A]', 'text-[#34D399]');
+      heatmapBtn.classList.add('text-[#9CA3AF]');
+    } else {
+      overlay.classList.remove('hidden');
+      heatmapBtn.classList.remove('text-[#9CA3AF]');
+      heatmapBtn.classList.add('bg-[#25312A]', 'text-[#34D399]');
+      photoBtn.classList.remove('bg-[#25312A]', 'text-[#F9FAFB]');
+      photoBtn.classList.add('text-[#9CA3AF]');
+    }
+  }
+</script></main></body></html>
