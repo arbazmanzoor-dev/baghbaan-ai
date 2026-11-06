@@ -1,0 +1,74 @@
+{
+  "total_images": 3164,
+  "per_split": {
+    "train": 2214,
+    "val": 475,
+    "test": 475
+  },
+  "per_class": {
+    "apple_scab": 630,
+    "black_rot": 621,
+    "cedar_apple_rust": 275,
+    "healthy": 1638
+  },
+  "per_split_class": {
+    "train": {
+      "apple_scab": 441,
+      "black_rot": 435,
+      "cedar_apple_rust": 192,
+      "healthy": 1146
+    },
+    "val": {
+      "apple_scab": 94,
+      "black_rot": 93,
+      "cedar_apple_rust": 42,
+      "healthy": 246
+    },
+    "test": {
+      "apple_scab": 95,
+      "black_rot": 93,
+      "cedar_apple_rust": 41,
+      "healthy": 246
+    }
+  },
+  "imbalance_ratio_max_over_min": 5.96,
+  "image_stats": {
+    "apple_scab": {
+      "sizes": {
+        "256x256": 630
+      },
+      "mean_brightness": 108.0,
+      "std_brightness": 14.2,
+      "mean_green_excess": 9.5
+    },
+    "black_rot": {
+      "sizes": {
+        "256x256": 621
+      },
+      "mean_brightness": 119.4,
+      "std_brightness": 9.1,
+      "mean_green_excess": 9.5
+    },
+    "cedar_apple_rust": {
+      "sizes": {
+        "256x256": 275
+      },
+      "mean_brightness": 114.8,
+      "std_brightness": 13.6,
+      "mean_green_excess": 15.1
+    },
+    "healthy": {
+      "sizes": {
+        "256x256": 1638
+      },
+      "mean_brightness": 114.3,
+      "std_brightness": 19.1,
+      "mean_green_excess": 3.7
+    }
+  },
+  "source": {
+    "repo": "https://github.com/spMohanty/PlantVillage-Dataset.git",
+    "commit": "7f7ecc7e1eaca78107e3affe7cb5abd9427e139a",
+    "subset": "raw/color/Apple___*"
+  }
+}

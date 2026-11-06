@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-11-02T05:13:38+00:00",
+  "model": {
+    "name": "baghbaan_mobilenetv2",
+    "backbone": "MobileNetV2 (ImageNet), alpha=1.0",
+    "input_size": 224,
+    "params": 2263108,
+    "keras_size_mb": 23.0
+  },
+  "dataset": {
+    "name": "PlantVillage (apple subset, lab conditions)",
+    "per_split": {
+      "train": 2214,
+      "val": 475,
+      "test": 475
+    }
+  },
+  "training": {
+    "epochs_frozen": 12,
+    "epochs_finetune": 15,
+    "train_minutes": 9.4
+  },
+  "test": {
+    "accuracy": 0.9832,
+    "macro_f1": 0.9837,
+    "weighted_f1": 0.9832,
+    "per_class": {
+      "apple_scab": {
+        "precision": 0.9785,
+        "recall": 0.9579,
+        "f1": 0.9681,
+        "support": 95
+      },
+      "black_rot": {
+        "precision": 0.9588,
+        "recall": 1.0,
+        "f1": 0.9789,
+        "support": 93
+      },
+      "cedar_apple_rust": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 41
+      },
+      "healthy": {
+        "precision": 0.9918,
+        "recall": 0.9837,
+        "f1": 0.9878,
+        "support": 246
+      }
+    },
+    "labels": [
+      "apple_scab",
+      "black_rot",
+      "cedar_apple_rust",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        91,
+        2,
+        0,
+        2
+      ],
+      [
+        0,
+        93,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        41,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        242
+      ]
+    ]
+  },
+  "confidence": {
+    "threshold": 0.7,
+    "coverage": 0.96,
+    "accuracy_when_confident": 0.9978,
+    "errors_when_confident": 1,
+    "low_confidence_count": 19
+  },
+  "gradcam_leaf_focus": {
+    "apple_scab": {
+      "leaf_focus_mean": 0.759,
+      "leaf_area_fraction_mean": 0.493
+    },
+    "black_rot": {
+      "leaf_focus_mean": 0.69,
+      "leaf_area_fraction_mean": 0.445
+    },
+    "cedar_apple_rust": {
+      "leaf_focus_mean": 0.774,
+      "leaf_area_fraction_mean": 0.409
+    },
+    "healthy": {
+      "leaf_focus_mean": 0.679,
+      "leaf_area_fraction_mean": 0.396
+    }
+  },
+  "tflite": {
+    "file": "baghbaan_mobilenetv2_int8.tflite",
+    "mode": "int8",
+    "size_mb": 2.73,
+    "test_accuracy": 0.9768,
+    "keras_test_accuracy": 0.9832,
+    "top1_agreement_with_keras": 0.9768,
+    "mean_abs_prob_diff": 0.0219,
+    "cpu_ms_per_image_laptop": 1.7,
+    "input": {
+      "dtype": "uint8",
+      "scale": 1.000000238418579,
+      "zero_point": 0
+    }
+  }
+}

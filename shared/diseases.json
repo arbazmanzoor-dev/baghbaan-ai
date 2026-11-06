@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "languages": ["en", "hi", "ur"],
+  "rtl_languages": ["ur"],
+  "messages": {
+    "expert_note": {
+      "en": "Consult your local agriculture officer / SKUAST-Kashmir expert before spraying.",
+      "hi": "छिड़काव से पहले अपने स्थानीय कृषि अधिकारी / SKUAST-कश्मीर विशेषज्ञ से सलाह लें।",
+      "ur": "اسپرے کرنے سے پہلے اپنے مقامی زرعی افسر / SKUAST-کشمیر کے ماہر سے مشورہ کریں۔"
+    },
+    "low_confidence": {
+      "en": "Not sure — retake photo or consult an expert.",
+      "hi": "पक्का नहीं कह सकते — फ़ोटो दोबारा लें या किसी विशेषज्ञ से सलाह लें।",
+      "ur": "یقین سے نہیں کہہ سکتے — دوبارہ تصویر لیں یا کسی ماہر سے مشورہ کریں۔"
+    }
+  },
+  "diseases": [
+    {
+      "id": "apple_scab",
+      "scientific_name": "Venturia inaequalis",
+      "pathogen": "fungus",
+      "severity": "high",
+      "content": {
+        "en": {
+          "name": "Apple Scab",
+          "summary": "A fungal disease that thrives in cool, wet spring weather and is the most damaging leaf and fruit disease of apple in Kashmir.",
+          "description": "Apple scab is caused by the fungus Venturia inaequalis. It survives the winter in fallen, infected leaves on the orchard floor. During spring rains, spores are released and infect young leaves, blossoms and fruitlets. Long periods of leaf wetness in mild temperatures favour infection, and spots that form can produce new spores that spread the disease through the season.",
+          "symptoms": [
+            "Olive-green to brown, velvety spots on the upper surface of leaves, often along the veins.",
+            "Spots darken and turn black; badly infected leaves curl, yellow and fall early.",
+            "Dark, rough, corky spots on fruit; severely affected fruit may crack or become misshapen.",
+            "Infections are usually worst after several days of rain in spring."
+          ],
+          "prevention": [
+            "Collect and destroy, bury or shred fallen leaves after leaf fall to reduce spores for next spring.",
+            "Prune to open the canopy so leaves dry quickly after rain and sunlight reaches inside.",
+            "Avoid overhead irrigation that keeps leaves wet.",
+            "Watch the orchard closely during wet spring weather, from bud break to petal fall."
+          ],
+          "management": [
+            "Remove and destroy badly infected leaves and fruit where practical.",
+            "Spray timing depends on weather and growth stage — follow the official spray schedule recommended by SKUAST-Kashmir and the Department of Horticulture.",
+            "Do not choose or mix chemicals on your own; confirm the product and dose with your local agriculture officer."
+          ]
+        },
+        "hi": {
+          "name": "सेब की पपड़ी (एप्पल स्कैब)",
+          "summary": "ठंडे और गीले बसंत मौसम में फैलने वाला फफूंद रोग, जो कश्मीर में सेब की पत्तियों और फलों का सबसे नुकसानदायक रोग है।",
+          "description": "एप्पल स्कैब वेंचुरिया इनइक्वालिस नामक फफूंद से होता है। यह सर्दियों में बाग़ की ज़मीन पर गिरी संक्रमित पत्तियों में जीवित रहता है। बसंत की बारिश में इसके बीजाणु निकलते हैं और नई पत्तियों, फूलों और छोटे फलों को संक्रमित करते हैं। हल्के तापमान में पत्तियों का देर तक गीला रहना संक्रमण बढ़ाता है, और बने हुए धब्बों से नए बीजाणु पूरे मौसम रोग फैलाते हैं।",
+          "symptoms": [
+            "पत्तियों की ऊपरी सतह पर जैतूनी-हरे से भूरे, मख़मली धब्बे, अक्सर नसों के साथ।",
+            "धब्बे गहरे होकर काले हो जाते हैं; ज़्यादा संक्रमित पत्तियाँ मुड़ती, पीली होती और जल्दी गिर जाती हैं।",
+            "फलों पर गहरे, खुरदरे, कॉर्क जैसे धब्बे; ज़्यादा प्रभावित फल फट सकते हैं या बेडौल हो सकते हैं।",
+            "बसंत में कई दिनों की बारिश के बाद संक्रमण आमतौर पर सबसे ज़्यादा होता है।"
+          ],
+          "prevention": [
+            "पत्तियाँ गिरने के बाद ज़मीन पर पड़ी पत्तियाँ इकट्ठा करके नष्ट करें, दबा दें या बारीक काट दें, ताकि अगले बसंत के बीजाणु कम हों।",
+            "छँटाई करके पेड़ को खुला रखें ताकि बारिश के बाद पत्तियाँ जल्दी सूखें और अंदर तक धूप पहुँचे।",
+            "ऊपर से पानी देने (स्प्रिंकलर) से बचें जिससे पत्तियाँ गीली रहती हैं।",
+            "बसंत के गीले मौसम में, कली खिलने से पंखुड़ी गिरने तक, बाग़ पर बारीकी से नज़र रखें।"
+          ],
+          "management": [
+            "जहाँ संभव हो, ज़्यादा संक्रमित पत्तियाँ और फल हटाकर नष्ट करें।",
+            "छिड़काव का समय मौसम और पेड़ की अवस्था पर निर्भर करता है — SKUAST-कश्मीर और बाग़वानी विभाग द्वारा सुझाए गए आधिकारिक छिड़काव कार्यक्रम का पालन करें।",
+            "दवा अपने आप न चुनें और न मिलाएँ; दवा और मात्रा अपने स्थानीय कृषि अधिकारी से पक्की करें।"
+          ]
+        },
+        "ur": {
+          "name": "سیب کی خارش (ایپل اسکیب)",
+          "summary": "ٹھنڈے اور مرطوب موسمِ بہار میں پھیلنے والی پھپھوندی کی بیماری، جو کشمیر میں سیب کے پتوں اور پھلوں کی سب سے نقصان دہ بیماری ہے۔",
+          "description": "ایپل اسکیب وینچوریا اِنایکوالِس نامی پھپھوندی سے ہوتی ہے۔ یہ سردیوں میں باغ کی زمین پر گرے ہوئے متاثرہ پتوں میں زندہ رہتی ہے۔ بہار کی بارشوں میں اس کے تخم (اسپورز) نکلتے ہیں اور نئے پتوں، پھولوں اور چھوٹے پھلوں کو متاثر کرتے ہیں۔ معتدل درجۂ حرارت میں پتوں کا دیر تک گیلا رہنا انفیکشن بڑھاتا ہے، اور بننے والے دھبوں سے نئے تخم پورے موسم بیماری پھیلاتے ہیں۔",
+          "symptoms": [
+            "پتوں کی اوپری سطح پر زیتونی سبز سے بھورے، مخملی دھبے، اکثر رگوں کے ساتھ۔",
+            "دھبے گہرے ہو کر کالے ہو جاتے ہیں؛ زیادہ متاثرہ پتے مڑ جاتے ہیں، پیلے ہوتے ہیں اور جلد گر جاتے ہیں۔",
+            "پھلوں پر گہرے، کھردرے، کارک جیسے دھبے؛ زیادہ متاثرہ پھل پھٹ سکتے ہیں یا بے ڈول ہو سکتے ہیں۔",
+            "بہار میں کئی دن کی بارش کے بعد انفیکشن عموماً سب سے زیادہ ہوتا ہے۔"
+          ],
+          "prevention": [
+            "پتے جھڑنے کے بعد زمین پر پڑے پتے جمع کر کے تلف کریں، دبا دیں یا باریک کاٹ دیں تاکہ اگلی بہار کے تخم کم ہوں۔",
+            "کٹائی چھنٹائی کر کے درخت کو کھلا رکھیں تاکہ بارش کے بعد پتے جلد سوکھیں اور اندر تک دھوپ پہنچے۔",
+            "اوپر سے پانی دینے (اسپرنکلر) سے پرہیز کریں جس سے پتے گیلے رہتے ہیں۔",
+            "بہار کے مرطوب موسم میں، کلی کھلنے سے پنکھڑی گرنے تک، باغ پر گہری نظر رکھیں۔"
+          ],
+          "management": [
+            "جہاں ممکن ہو، زیادہ متاثرہ پتے اور پھل ہٹا کر تلف کریں۔",
+            "اسپرے کا وقت موسم اور درخت کی حالت پر منحصر ہے — SKUAST-کشمیر اور محکمۂ باغبانی کے تجویز کردہ سرکاری اسپرے شیڈول پر عمل کریں۔",
+            "دوا خود سے نہ چنیں اور نہ ملائیں؛ دوا اور مقدار اپنے مقامی زرعی افسر سے تصدیق کریں۔"
+          ]
+        }
+      }
+    },
+    {
+      "id": "black_rot",
+      "scientific_name": "Botryosphaeria obtusa (Diplodia seriata)",
+      "pathogen": "fungus",
+      "severity": "moderate",
+      "content": {
+        "en": {
+          "name": "Black Rot",
+          "summary": "A fungal disease that causes 'frog-eye' leaf spots, fruit rot and branch cankers, spreading from dead wood and old infected fruit.",
+          "description": "Black rot is caused by the fungus Botryosphaeria obtusa. It survives in dead or cankered branches, old pruning wood and shrivelled 'mummified' fruit left on the tree or ground. Spores spread in warm, wet weather and enter through leaves, fruit and wounds in the bark. On leaves it causes the spots known as frog-eye leaf spot.",
+          "symptoms": [
+            "Small purple specks on leaves that grow into round spots with a tan-brown centre and a purple edge (frog-eye spots).",
+            "Heavily spotted leaves may turn yellow and drop.",
+            "On fruit, a brown rot that often starts at the blossom end, darkens to black and may show rings; fruit can dry into hard black mummies.",
+            "Sunken, reddish-brown cankers with rough bark on branches and limbs."
+          ],
+          "prevention": [
+            "Prune out dead, diseased and cankered wood during dry weather and remove prunings from the orchard.",
+            "Remove mummified fruit from trees and the ground.",
+            "Avoid wounding bark and fruit; protect trees from sunscald and winter injury where possible.",
+            "Keep trees vigorous with balanced nutrition and good orchard hygiene."
+          ],
+          "management": [
+            "Cut cankers back into healthy wood and destroy the removed material.",
+            "Clear infected fruit and leaves from under the trees.",
+            "If chemical control is needed, follow the SKUAST-Kashmir spray schedule and confirm the product and dose with your local agriculture officer."
+          ]
+        },
+        "hi": {
+          "name": "काला सड़न (ब्लैक रॉट)",
+          "summary": "एक फफूंद रोग जो पत्तियों पर 'मेंढक-आँख' धब्बे, फलों में सड़न और टहनियों पर कैंकर बनाता है, और सूखी लकड़ी व पुराने संक्रमित फलों से फैलता है।",
+          "description": "ब्लैक रॉट बोट्रियोस्फेरिया ऑब्टूसा नामक फफूंद से होता है। यह सूखी या कैंकर वाली टहनियों, छँटाई की पुरानी लकड़ी और पेड़ या ज़मीन पर पड़े सिकुड़े हुए 'ममी' फलों में जीवित रहता है। गर्म और गीले मौसम में इसके बीजाणु फैलते हैं और पत्तियों, फलों और छाल के घावों से अंदर जाते हैं। पत्तियों पर यह 'फ्रॉग-आई' धब्बे बनाता है।",
+          "symptoms": [
+            "पत्तियों पर छोटे बैंगनी बिंदु जो बढ़कर गोल धब्बे बनते हैं — बीच में हल्का भूरा और किनारा बैंगनी (मेंढक-आँख धब्बे)।",
+            "ज़्यादा धब्बों वाली पत्तियाँ पीली होकर गिर सकती हैं।",
+            "फल पर भूरी सड़न जो अक्सर फूल वाले सिरे से शुरू होती है, काली पड़ जाती है और छल्ले दिख सकते हैं; फल सूखकर सख़्त काले 'ममी' बन सकते हैं।",
+            "शाखाओं पर धँसे हुए, लाल-भूरे कैंकर और खुरदरी छाल।"
+          ],
+          "prevention": [
+            "सूखे मौसम में सूखी, रोगी और कैंकर वाली लकड़ी छाँटें और कटी टहनियाँ बाग़ से बाहर ले जाएँ।",
+            "पेड़ों और ज़मीन से 'ममी' फल हटा दें।",
+            "छाल और फलों को चोट से बचाएँ; जहाँ संभव हो, पेड़ों को धूप-झुलसन और सर्दी की चोट से बचाएँ।",
+            "संतुलित पोषण और बाग़ की साफ़-सफ़ाई से पेड़ों को स्वस्थ रखें।"
+          ],
+          "management": [
+            "कैंकर को स्वस्थ लकड़ी तक काटें और काटा हुआ हिस्सा नष्ट करें।",
+            "पेड़ों के नीचे से संक्रमित फल और पत्तियाँ साफ़ करें।",
+            "अगर दवा की ज़रूरत हो तो SKUAST-कश्मीर के छिड़काव कार्यक्रम का पालन करें और दवा व मात्रा अपने स्थानीय कृषि अधिकारी से पक्की करें।"
+          ]
+        },
+        "ur": {
+          "name": "کالا سڑن (بلیک راٹ)",
+          "summary": "پھپھوندی کی ایک بیماری جو پتوں پر 'مینڈک کی آنکھ' جیسے دھبے، پھلوں میں سڑن اور شاخوں پر ناسور (کینکر) بناتی ہے، اور سوکھی لکڑی اور پرانے متاثرہ پھلوں سے پھیلتی ہے۔",
+          "description": "بلیک راٹ بوٹریوسفیریا اوبٹیوسا نامی پھپھوندی سے ہوتی ہے۔ یہ سوکھی یا ناسور زدہ شاخوں، کٹائی کی پرانی لکڑی اور درخت یا زمین پر پڑے سکڑے ہوئے 'ممی' پھلوں میں زندہ رہتی ہے۔ گرم اور مرطوب موسم میں اس کے تخم پھیلتے ہیں اور پتوں، پھلوں اور چھال کے زخموں سے اندر داخل ہوتے ہیں۔ پتوں پر یہ 'فراگ آئی' دھبے بناتی ہے۔",
+          "symptoms": [
+            "پتوں پر چھوٹے جامنی نقطے جو بڑھ کر گول دھبے بنتے ہیں — درمیان میں ہلکا بھورا اور کنارہ جامنی (مینڈک کی آنکھ جیسے دھبے)۔",
+            "زیادہ دھبوں والے پتے پیلے ہو کر گر سکتے ہیں۔",
+            "پھل پر بھوری سڑن جو اکثر پھول والے سرے سے شروع ہوتی ہے، کالی پڑ جاتی ہے اور حلقے نظر آ سکتے ہیں؛ پھل سوکھ کر سخت کالی 'ممی' بن سکتے ہیں۔",
+            "شاخوں پر دھنسے ہوئے، سرخی مائل بھورے ناسور اور کھردری چھال۔"
+          ],
+          "prevention": [
+            "خشک موسم میں سوکھی، بیمار اور ناسور زدہ لکڑی کاٹیں اور کٹی ہوئی شاخیں باغ سے باہر لے جائیں۔",
+            "درختوں اور زمین سے 'ممی' پھل ہٹا دیں۔",
+            "چھال اور پھلوں کو زخمی ہونے سے بچائیں؛ جہاں ممکن ہو، درختوں کو دھوپ کی جلن اور سردی کے نقصان سے بچائیں۔",
+            "متوازن غذائیت اور باغ کی صفائی سے درختوں کو صحت مند رکھیں۔"
+          ],
+          "management": [
+            "ناسور کو صحت مند لکڑی تک کاٹیں اور کٹا ہوا حصہ تلف کریں۔",
+            "درختوں کے نیچے سے متاثرہ پھل اور پتے صاف کریں۔",
+            "اگر دوا کی ضرورت ہو تو SKUAST-کشمیر کے اسپرے شیڈول پر عمل کریں اور دوا اور مقدار اپنے مقامی زرعی افسر سے تصدیق کریں۔"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cedar_apple_rust",
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "pathogen": "fungus",
+      "severity": "moderate",
+      "content": {
+        "en": {
+          "name": "Cedar Apple Rust",
+          "summary": "A rust disease that needs both apple and juniper (cedar) trees to complete its life cycle, causing bright orange-yellow leaf spots.",
+          "description": "Cedar apple rust is caused by the fungus Gymnosporangium juniperi-virginianae. It spends part of its life on juniper (cedar) trees, where it forms galls. In wet spring weather the galls release spores that are carried by wind to nearby apple trees and infect young leaves and fruit. Spores from apple then reinfect junipers, so the disease cannot spread from apple to apple directly.",
+          "symptoms": [
+            "Small pale-yellow spots on the upper leaf surface in spring that enlarge into bright orange-yellow spots.",
+            "Tiny black dots appear in the centre of the spots.",
+            "Later, small tube- or cup-like structures form on the underside of the leaf beneath the spots.",
+            "Spots can also appear on fruit; heavy infection weakens the tree and can cause early leaf drop."
+          ],
+          "prevention": [
+            "Where practical, remove juniper (cedar) trees growing close to the orchard, or remove galls from them in late winter.",
+            "Choose rust-tolerant apple varieties for new plantings where available.",
+            "Inspect leaves after spring rains, when infections usually start."
+          ],
+          "management": [
+            "Remove and destroy heavily infected leaves where practical.",
+            "Protective sprays are only effective at the right time in spring — ask your local agriculture officer or SKUAST-Kashmir expert whether and when to spray."
+          ]
+        },
+        "hi": {
+          "name": "सीडर एप्पल रस्ट (गेरुआ रोग)",
+          "summary": "एक गेरुआ (रस्ट) रोग जिसे अपना जीवन-चक्र पूरा करने के लिए सेब और जुनिपर (देवदार जाति) दोनों पेड़ चाहिए; यह पत्तियों पर चमकीले नारंगी-पीले धब्बे बनाता है।",
+          "description": "सीडर एप्पल रस्ट जिम्नोस्पोरेंजियम जुनिपेरी-वर्जिनियाने नामक फफूंद से होता है। यह अपने जीवन का एक हिस्सा जुनिपर (सीडर) पेड़ों पर बिताता है, जहाँ गाँठें (गॉल) बनाता है। बसंत के गीले मौसम में इन गाँठों से बीजाणु निकलकर हवा से पास के सेब के पेड़ों तक पहुँचते हैं और नई पत्तियों व फलों को संक्रमित करते हैं। सेब से निकले बीजाणु फिर जुनिपर को संक्रमित करते हैं, इसलिए यह रोग सेब से सेब में सीधे नहीं फैलता।",
+          "symptoms": [
+            "बसंत में पत्ती की ऊपरी सतह पर छोटे हल्के-पीले धब्बे जो बढ़कर चमकीले नारंगी-पीले हो जाते हैं।",
+            "धब्बों के बीच में छोटे काले बिंदु दिखते हैं।",
+            "बाद में धब्बों के नीचे, पत्ती की निचली सतह पर छोटी नली या प्याले जैसी संरचनाएँ बनती हैं।",
+            "धब्बे फलों पर भी आ सकते हैं; ज़्यादा संक्रमण से पेड़ कमज़ोर होता है और पत्तियाँ जल्दी गिर सकती हैं।"
+          ],
+          "prevention": [
+            "जहाँ संभव हो, बाग़ के पास उगे जुनिपर (सीडर) पेड़ हटाएँ, या देर सर्दी में उनसे गाँठें हटा दें।",
+            "नए बाग़ के लिए, जहाँ उपलब्ध हों, रस्ट-सहनशील किस्में चुनें।",
+            "बसंत की बारिश के बाद पत्तियों की जाँच करें, जब संक्रमण आमतौर पर शुरू होता है।"
+          ],
+          "management": [
+            "जहाँ संभव हो, ज़्यादा संक्रमित पत्तियाँ हटाकर नष्ट करें।",
+            "बचाव वाला छिड़काव बसंत में सही समय पर ही असर करता है — छिड़काव करना है या नहीं और कब, यह अपने स्थानीय कृषि अधिकारी या SKUAST-कश्मीर विशेषज्ञ से पूछें।"
+          ]
+        },
+        "ur": {
+          "name": "سیڈر ایپل رسٹ (زنگ کی بیماری)",
+          "summary": "زنگ (رسٹ) کی ایک بیماری جسے اپنا دورِ حیات پورا کرنے کے لیے سیب اور جونیپر (دیودار نما) دونوں درخت درکار ہیں؛ یہ پتوں پر چمکدار نارنجی پیلے دھبے بناتی ہے۔",
+          "description": "سیڈر ایپل رسٹ جمنوسپورینجیم جونیپری ورجینیانی نامی پھپھوندی سے ہوتی ہے۔ یہ اپنی زندگی کا ایک حصہ جونیپر (سیڈر) کے درختوں پر گزارتی ہے، جہاں گانٹھیں (گال) بناتی ہے۔ بہار کے مرطوب موسم میں ان گانٹھوں سے تخم نکل کر ہوا کے ذریعے قریبی سیب کے درختوں تک پہنچتے ہیں اور نئے پتوں اور پھلوں کو متاثر کرتے ہیں۔ سیب سے نکلنے والے تخم پھر جونیپر کو متاثر کرتے ہیں، اس لیے یہ بیماری سیب سے سیب میں براہِ راست نہیں پھیلتی۔",
+          "symptoms": [
+            "بہار میں پتے کی اوپری سطح پر چھوٹے ہلکے پیلے دھبے جو بڑھ کر چمکدار نارنجی پیلے ہو جاتے ہیں۔",
+            "دھبوں کے درمیان چھوٹے کالے نقطے نظر آتے ہیں۔",
+            "بعد میں دھبوں کے نیچے، پتے کی نچلی سطح پر چھوٹی نلکی یا پیالے جیسی ساختیں بنتی ہیں۔",
+            "دھبے پھلوں پر بھی آ سکتے ہیں؛ زیادہ انفیکشن سے درخت کمزور ہوتا ہے اور پتے جلد گر سکتے ہیں۔"
+          ],
+          "prevention": [
+            "جہاں ممکن ہو، باغ کے قریب اُگے جونیپر (سیڈر) کے درخت ہٹائیں، یا سردیوں کے آخر میں ان سے گانٹھیں ہٹا دیں۔",
+            "نئے باغ کے لیے، جہاں دستیاب ہوں، زنگ برداشت کرنے والی اقسام چنیں۔",
+            "بہار کی بارش کے بعد پتوں کا معائنہ کریں، جب انفیکشن عموماً شروع ہوتا ہے۔"
+          ],
+          "management": [
+            "جہاں ممکن ہو، زیادہ متاثرہ پتے ہٹا کر تلف کریں۔",
+            "حفاظتی اسپرے بہار میں صحیح وقت پر ہی مؤثر ہوتا ہے — اسپرے کرنا ہے یا نہیں اور کب، یہ اپنے مقامی زرعی افسر یا SKUAST-کشمیر کے ماہر سے پوچھیں۔"
+          ]
+        }
+      }
+    },
+    {
+      "id": "healthy",
+      "scientific_name": "Malus domestica",
+      "pathogen": "none",
+      "severity": "none",
+      "content": {
+        "en": {
+          "name": "Healthy Leaf",
+          "summary": "No signs of apple scab, black rot or cedar apple rust were detected on this leaf.",
+          "description": "The leaf shows none of the disease patterns the model was trained to recognise. Keep in mind that the model only checks for three diseases; other problems such as pests, nutrient deficiency or other diseases are not detected.",
+          "symptoms": [
+            "Uniform green colour with clear veins.",
+            "No spots, lesions, rust-coloured patches or abnormal curling."
+          ],
+          "prevention": [
+            "Keep up regular orchard sanitation: clear fallen leaves and remove dead wood.",
+            "Prune for good airflow and sunlight.",
+            "Scan leaves again during wet spring weather, when diseases usually start."
+          ],
+          "management": [
+            "No treatment is needed for this leaf.",
+            "If you see symptoms on other leaves or fruit, scan them too and consult your local agriculture officer."
+          ]
+        },
+        "hi": {
+          "name": "स्वस्थ पत्ती",
+          "summary": "इस पत्ती पर एप्पल स्कैब, ब्लैक रॉट या सीडर एप्पल रस्ट के कोई लक्षण नहीं मिले।",
+          "description": "पत्ती में उन रोगों का कोई पैटर्न नहीं दिखा जिन्हें पहचानने के लिए मॉडल को सिखाया गया है। ध्यान रखें कि मॉडल केवल तीन रोगों की जाँच करता है; कीट, पोषक तत्वों की कमी या दूसरे रोग इससे पता नहीं चलते।",
+          "symptoms": [
+            "एक-सा हरा रंग और साफ़ नसें।",
+            "कोई धब्बा, घाव, गेरुए रंग का निशान या असामान्य मुड़ाव नहीं।"
+          ],
+          "prevention": [
+            "बाग़ की नियमित सफ़ाई जारी रखें: गिरी पत्तियाँ साफ़ करें और सूखी लकड़ी हटाएँ।",
+            "हवा और धूप के लिए छँटाई करें।",
+            "बसंत के गीले मौसम में, जब रोग आमतौर पर शुरू होते हैं, पत्तियाँ फिर से स्कैन करें।"
+          ],
+          "management": [
+            "इस पत्ती के लिए किसी उपचार की ज़रूरत नहीं है।",
+            "अगर दूसरी पत्तियों या फलों पर लक्षण दिखें, तो उन्हें भी स्कैन करें और अपने स्थानीय कृषि अधिकारी से सलाह लें।"
+          ]
+        },
+        "ur": {
+          "name": "صحت مند پتا",
+          "summary": "اس پتے پر ایپل اسکیب، بلیک راٹ یا سیڈر ایپل رسٹ کی کوئی علامت نہیں ملی۔",
+          "description": "پتے میں ان بیماریوں کا کوئی نمونہ نظر نہیں آیا جنہیں پہچاننے کے لیے ماڈل کو سکھایا گیا ہے۔ یاد رکھیں کہ ماڈل صرف تین بیماریوں کی جانچ کرتا ہے؛ کیڑے، غذائی کمی یا دوسری بیماریاں اس سے معلوم نہیں ہوتیں۔",
+          "symptoms": [
+            "یکساں سبز رنگ اور صاف رگیں۔",
+            "کوئی دھبہ، زخم، زنگ نما نشان یا غیر معمولی مڑاؤ نہیں۔"
+          ],
+          "prevention": [
+            "باغ کی باقاعدہ صفائی جاری رکھیں: گرے ہوئے پتے صاف کریں اور سوکھی لکڑی ہٹائیں۔",
+            "ہوا اور دھوپ کے لیے کٹائی چھنٹائی کریں۔",
+            "بہار کے مرطوب موسم میں، جب بیماریاں عموماً شروع ہوتی ہیں، پتے دوبارہ اسکین کریں۔"
+          ],
+          "management": [
+            "اس پتے کے لیے کسی علاج کی ضرورت نہیں۔",
+            "اگر دوسرے پتوں یا پھلوں پر علامات نظر آئیں تو انہیں بھی اسکین کریں اور اپنے مقامی زرعی افسر سے مشورہ کریں۔"
+          ]
+        }
+      }
+    }
+  ]
+}
