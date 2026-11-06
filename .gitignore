@@ -1,0 +1,58 @@
+# --- Secrets & local env ---
+.env
+.env.*
+!.env.example
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# --- ML: datasets and large model artefacts are never committed ---
+ml/data/*
+!ml/data/.gitkeep
+ml/models/*
+!ml/models/.gitkeep
+ml/checkpoints/
+ml/logs/
+*.h5
+*.keras
+*.tflite
+# Exception: the 2.7 MB int8 model ships inside the app for offline inference.
+!mobile/assets/model/*.tflite
+*.tfrecord*
+*.npz
+tensorflow_datasets/
+
+# Backend loads the model from a mounted/copied path, not from git
+backend/models/*
+!backend/models/.gitkeep
+backend/data/
+
+# --- Node / Expo ---
+node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/android/
+mobile/ios/
+mobile/expo-env.d.ts
+*.apk
+*.aab
+*.ipa
+*.jks
+*.keystore
+npm-debug.log*

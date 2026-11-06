@@ -1,0 +1,31 @@
+# Local / single-server deployment of the BaghBaan AI API.
+#
+#   cp backend/.env.example backend/.env      # then set JWT_SECRET
+#   cp ml/models/baghbaan_mobilenetv2.keras ml/models/metrics.json backend/models/
+#   docker compose up --build
+#
+# API: http://localhost:8000   Docs: http://localhost:8000/docs
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: baghbaan-api:local
+    ports:
+      - "${API_PORT:-8000}:8000"
+    env_file:
+      - path: backend/.env
+        required: false
+    environment:
+      # Paths inside the container (override anything copied from .env).
+      MODEL_PATH: /app/models/baghbaan_mobilenetv2.keras
+      METRICS_PATH: /app/models/metrics.json
+      DATABASE_URL: sqlite:////app/data/baghbaan.db
+    volumes:
+      # Model files are mounted read-only so a retrained model needs no image rebuild.
+      - ./backend/models:/app/models:ro
+      - api-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  api-data:

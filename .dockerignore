@@ -1,0 +1,9 @@
+# Build context is the repo root; only the backend and shared content are needed.
+*
+!backend/pyproject.toml
+!backend/uv.lock
+!backend/.python-version
+!backend/app/
+!backend/models/
+!shared/
+**/__pycache__

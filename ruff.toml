@@ -1,0 +1,21 @@
+# Shared Ruff config for ml/ and backend/.
+target-version = "py312"
+line-length = 100
+extend-exclude = ["design", "mobile", "**/.venv"]
+
+[lint]
+select = [
+  "E", "W",  # pycodestyle
+  "F",       # pyflakes
+  "I",       # isort
+  "B",       # bugbear
+  "UP",      # pyupgrade
+  "SIM",     # simplify
+  "N",       # pep8-naming
+]
+
+[lint.isort]
+known-first-party = ["app", "baghbaan_ml"]
+
+[format]
+quote-style = "double"
